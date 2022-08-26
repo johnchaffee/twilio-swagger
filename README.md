@@ -47,12 +47,5 @@ Click one of the links below to view the Swagger Doc.
 
 ## Resources
 
-- Repos
-  - [twilio-oai](https://github.com/twilio/twilio-oai)
-  - [swagger-ui](https://github.com/swagger-api/swagger-ui)
-- Open API Specs
-  - [twilio_api_v2010.json](https://github.com/twilio/twilio-oai/blob/main/spec/json/twilio_api_v2010.json)
-  - [twilio_conversations_v1.json](https://github.com/twilio/twilio-oai/blob/main/spec/json/twilio_conversations_v1.json)
-  - [twilio_lookups_v2.json](https://github.com/twilio/twilio-oai/blob/main/spec/json/twilio_lookups_v2.json)
-  - [twilio_messaging_v1.json](https://github.com/twilio/twilio-oai/blob/main/spec/json/twilio_messaging_v1.json)
-  - [twilio_verify_v2.json](https://github.com/twilio/twilio-oai/blob/main/spec/json/twilio_verify_v2.json)
+- [twilio-oai](https://github.com/twilio/twilio-oai) - Twilio OpenAPI Repo
+- [swagger-ui](https://github.com/swagger-api/swagger-ui) - Swagger UI Repo
