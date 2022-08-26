@@ -17,7 +17,7 @@ Click one of the links below to view the Swagger Doc.
 | [Twilio Messaging API](https://johnchaffee.wiki/twilio-swagger/messaging/)                   | Send messages via SMS, MMS, WhatsApp and more |
 | [Twilio Messaging Services API](https://johnchaffee.wiki/twilio-swagger/messaging-services/) | Manage Messaging Services and Number Pools    |
 | [Twilio Conversations API](https://johnchaffee.wiki/twilio-swagger/conversations/)           | Manage 2-way human-to-human conversations     |
-| [Twilio Lookups v2 API](https://johnchaffee.wiki/twilio-swagger/lookup/)                     | Validate Phone Number formats and types       |
+| [Twilio Lookups v2 API](https://johnchaffee.wiki/twilio-swagger/lookups/)                     | Validate Phone Number formats and types       |
 | [Twilio Verify API](https://johnchaffee.wiki/twilio-swagger/verify/)                         | Send and validate one-time-passcodes          |
 
 ## Instructions
