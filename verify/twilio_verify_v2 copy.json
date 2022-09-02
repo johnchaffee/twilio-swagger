@@ -70,7 +70,9 @@
       },
       "access_token_enum_factor_types": {
         "type": "string",
-        "enum": ["push"]
+        "enum": [
+          "push"
+        ]
       },
       "verify.v2.service.rate_limit.bucket": {
         "type": "object",
@@ -255,19 +257,34 @@
       },
       "challenge_enum_challenge_statuses": {
         "type": "string",
-        "enum": ["pending", "expired", "approved", "denied"]
+        "enum": [
+          "pending",
+          "expired",
+          "approved",
+          "denied"
+        ]
       },
       "challenge_enum_challenge_reasons": {
         "type": "string",
-        "enum": ["none", "not_needed", "not_requested"]
+        "enum": [
+          "none",
+          "not_needed",
+          "not_requested"
+        ]
       },
       "challenge_enum_factor_types": {
         "type": "string",
-        "enum": ["push", "totp"]
+        "enum": [
+          "push",
+          "totp"
+        ]
       },
       "challenge_enum_list_orders": {
         "type": "string",
-        "enum": ["asc", "desc"]
+        "enum": [
+          "asc",
+          "desc"
+        ]
       },
       "verify.v2.service.entity": {
         "type": "object",
@@ -414,19 +431,33 @@
       },
       "factor_enum_factor_statuses": {
         "type": "string",
-        "enum": ["unverified", "verified"]
+        "enum": [
+          "unverified",
+          "verified"
+        ]
       },
       "factor_enum_factor_types": {
         "type": "string",
-        "enum": ["push", "totp"]
+        "enum": [
+          "push",
+          "totp"
+        ]
       },
       "factor_enum_notification_platforms": {
         "type": "string",
-        "enum": ["apn", "fcm", "none"]
+        "enum": [
+          "apn",
+          "fcm",
+          "none"
+        ]
       },
       "factor_enum_totp_algorithms": {
         "type": "string",
-        "enum": ["sha1", "sha256", "sha512"]
+        "enum": [
+          "sha1",
+          "sha256",
+          "sha512"
+        ]
       },
       "verify.v2.form": {
         "type": "object",
@@ -455,7 +486,9 @@
       },
       "form_enum_form_types": {
         "type": "string",
-        "enum": ["form-push"]
+        "enum": [
+          "form-push"
+        ]
       },
       "verify.v2.service.messaging_configuration": {
         "type": "object",
@@ -600,19 +633,33 @@
       },
       "new_factor_enum_factor_statuses": {
         "type": "string",
-        "enum": ["unverified", "verified"]
+        "enum": [
+          "unverified",
+          "verified"
+        ]
       },
       "new_factor_enum_factor_types": {
         "type": "string",
-        "enum": ["push", "totp"]
+        "enum": [
+          "push",
+          "totp"
+        ]
       },
       "new_factor_enum_notification_platforms": {
         "type": "string",
-        "enum": ["apn", "fcm", "none"]
+        "enum": [
+          "apn",
+          "fcm",
+          "none"
+        ]
       },
       "new_factor_enum_totp_algorithms": {
         "type": "string",
-        "enum": ["sha1", "sha256", "sha512"]
+        "enum": [
+          "sha1",
+          "sha256",
+          "sha512"
+        ]
       },
       "verify.v2.service.entity.challenge.notification": {
         "type": "object",
@@ -942,11 +989,20 @@
       },
       "verification_enum_channel": {
         "type": "string",
-        "enum": ["sms", "call", "email", "whatsapp", "sna"]
+        "enum": [
+          "sms",
+          "call",
+          "email",
+          "whatsapp",
+          "sna"
+        ]
       },
       "verification_enum_status": {
         "type": "string",
-        "enum": ["canceled", "approved"]
+        "enum": [
+          "canceled",
+          "approved"
+        ]
       },
       "verify.v2.verification_attempt": {
         "type": "object",
@@ -1024,7 +1080,12 @@
       },
       "verification_attempt_enum_channels": {
         "type": "string",
-        "enum": ["sms", "call", "email", "whatsapp"]
+        "enum": [
+          "sms",
+          "call",
+          "email",
+          "whatsapp"
+        ]
       },
       "verification_attempt_enum_call_status": {
         "type": "string",
@@ -1059,11 +1120,18 @@
       },
       "verification_attempt_enum_conversion_status": {
         "type": "string",
-        "enum": ["converted", "unconverted"]
+        "enum": [
+          "converted",
+          "unconverted"
+        ]
       },
       "verification_attempt_enum_attempt_status": {
         "type": "string",
-        "enum": ["confirmed", "unconfirmed", "expired"]
+        "enum": [
+          "confirmed",
+          "unconfirmed",
+          "expired"
+        ]
       },
       "verify.v2.verification_attempts_summary": {
         "type": "object",
@@ -1097,7 +1165,12 @@
       },
       "verification_attempts_summary_enum_channels": {
         "type": "string",
-        "enum": ["sms", "call", "email", "whatsapp"]
+        "enum": [
+          "sms",
+          "call",
+          "email",
+          "whatsapp"
+        ]
       },
       "verify.v2.service.verification_check": {
         "type": "object",
@@ -1179,7 +1252,13 @@
       },
       "verification_check_enum_channel": {
         "type": "string",
-        "enum": ["sms", "call", "email", "whatsapp", "sna"]
+        "enum": [
+          "sms",
+          "call",
+          "email",
+          "whatsapp",
+          "sna"
+        ]
       },
       "verify.v2.verification_template": {
         "type": "object",
@@ -1297,15 +1376,24 @@
       },
       "webhook_enum_status": {
         "type": "string",
-        "enum": ["enabled", "disabled"]
+        "enum": [
+          "enabled",
+          "disabled"
+        ]
       },
       "webhook_enum_version": {
         "type": "string",
-        "enum": ["v1", "v2"]
+        "enum": [
+          "v1",
+          "v2"
+        ]
       },
       "webhook_enum_methods": {
         "type": "string",
-        "enum": ["GET", "POST"]
+        "enum": [
+          "GET",
+          "POST"
+        ]
       }
     },
     "securitySchemes": {
@@ -1331,47 +1419,6 @@
     "version": "1.32.0"
   },
   "openapi": "3.0.1",
-  "tags": [
-    {
-      "name": "Services"
-    },
-    {
-      "name": "Verifications"
-    },
-    {
-      "name": "Attempts"
-    },
-    {
-      "name": "Access Tokens"
-    },
-    {
-      "name": "Buckets"
-    },
-    {
-      "name": "Entities"
-    },
-    {
-      "name": "Challenges"
-    },
-    {
-      "name": "Factors"
-    },
-    {
-      "name": "Forms"
-    },
-    {
-      "name": "Messaging Configurations"
-    },
-    {
-      "name": "Rate Limits"
-    },
-    {
-      "name": "Templates"
-    },
-    {
-      "name": "Webhooks"
-    },
-  ],
   "paths": {
     "/v2/Services/{ServiceSid}/AccessTokens": {
       "servers": [
@@ -1396,7 +1443,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Access Tokens"],
         "description": "Create a new enrollment Access Token for the Entity",
         "parameters": [
           {
@@ -1430,7 +1476,9 @@
           }
         ],
         "operationId": "CreateAccessToken",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1456,7 +1504,10 @@
                     "description": "How long, in seconds, the access token is valid. Can be an integer between 60 and 300. Default is 60."
                   }
                 },
-                "required": ["Identity", "FactorType"]
+                "required": [
+                  "Identity",
+                  "FactorType"
+                ]
               }
             }
           }
@@ -1486,7 +1537,6 @@
         "parent": "/Services"
       },
       "get": {
-        "tags": ["Access Tokens"],
         "description": "Fetch an Access Token for the Entity",
         "parameters": [
           {
@@ -1532,7 +1582,9 @@
           }
         ],
         "operationId": "FetchAccessToken",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets": {
@@ -1557,7 +1609,6 @@
         "parent": "/Services/{ServiceSid}/RateLimits"
       },
       "post": {
-        "tags": ["Buckets"],
         "description": "Create a new Bucket for a Rate Limit",
         "parameters": [
           {
@@ -1603,7 +1654,9 @@
           }
         ],
         "operationId": "CreateBucket",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1620,14 +1673,16 @@
                     "description": "Number of seconds that the rate limit will be enforced over."
                   }
                 },
-                "required": ["Max", "Interval"]
+                "required": [
+                  "Max",
+                  "Interval"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Buckets"],
         "description": "Retrieve a list of all Buckets for a Rate Limit.",
         "parameters": [
           {
@@ -1722,7 +1777,9 @@
           }
         ],
         "operationId": "ListBucket",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets/{Sid}": {
@@ -1747,7 +1804,6 @@
         "parent": "/Services/{ServiceSid}/RateLimits"
       },
       "post": {
-        "tags": ["Buckets"],
         "description": "Update a specific Bucket.",
         "parameters": [
           {
@@ -1805,7 +1861,9 @@
           }
         ],
         "operationId": "UpdateBucket",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1828,7 +1886,6 @@
         }
       },
       "get": {
-        "tags": ["Buckets"],
         "description": "Fetch a specific Bucket.",
         "parameters": [
           {
@@ -1886,10 +1943,11 @@
           }
         ],
         "operationId": "FetchBucket",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       },
       "delete": {
-        "tags": ["Buckets"],
         "description": "Delete a specific Bucket.",
         "parameters": [
           {
@@ -1940,7 +1998,9 @@
           }
         ],
         "operationId": "DeleteBucket",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges": {
@@ -1961,7 +2021,6 @@
         "parent": "/Services/{ServiceSid}/Entities"
       },
       "post": {
-        "tags": ["Challenges"],
         "description": "Create a new Challenge for the Factor",
         "parameters": [
           {
@@ -2004,7 +2063,9 @@
           }
         ],
         "operationId": "CreateChallenge",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2041,14 +2102,15 @@
                     "description": "Optional payload used to verify the Challenge upon creation. Only used with a Factor of type `totp` to carry the TOTP code that needs to be verified. For `TOTP` this value must be between 3 and 8 characters long."
                   }
                 },
-                "required": ["FactorSid"]
+                "required": [
+                  "FactorSid"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Challenges"],
         "description": "Retrieve a list of all Challenges for a Factor.",
         "parameters": [
           {
@@ -2169,7 +2231,9 @@
           }
         ],
         "operationId": "ListChallenge",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges/{Sid}": {
@@ -2190,7 +2254,6 @@
         "parent": "/Services/{ServiceSid}/Entities"
       },
       "get": {
-        "tags": ["Challenges"],
         "description": "Fetch a specific Challenge.",
         "parameters": [
           {
@@ -2245,10 +2308,11 @@
           }
         ],
         "operationId": "FetchChallenge",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       },
       "post": {
-        "tags": ["Challenges"],
         "description": "Verify a specific Challenge.",
         "parameters": [
           {
@@ -2303,7 +2367,9 @@
           }
         ],
         "operationId": "UpdateChallenge",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2333,12 +2399,15 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "identity", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "identity",
+          "date_created"
+        ],
         "pathType": "list",
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Entities"],
         "description": "Create a new Entity for the Service",
         "parameters": [
           {
@@ -2372,7 +2441,9 @@
           }
         ],
         "operationId": "CreateEntity",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2385,14 +2456,15 @@
                     "description": "The unique external identifier for the Entity of the Service. This identifier should be immutable, not PII, length between 8 and 64 characters, and generated by your external system, such as your user's UUID, GUID, or SID. It can only contain dash (-) separated alphanumeric characters."
                   }
                 },
-                "required": ["Identity"]
+                "required": [
+                  "Identity"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Entities"],
         "description": "Retrieve a list of all Entities for a Service.",
         "parameters": [
           {
@@ -2475,7 +2547,9 @@
           }
         ],
         "operationId": "ListEntity",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}": {
@@ -2486,12 +2560,15 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "identity", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "identity",
+          "date_created"
+        ],
         "pathType": "instance",
         "parent": "/Services"
       },
       "delete": {
-        "tags": ["Entities"],
         "description": "Delete a specific Entity.",
         "parameters": [
           {
@@ -2527,10 +2604,11 @@
           }
         ],
         "operationId": "DeleteEntity",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       },
       "get": {
-        "tags": ["Entities"],
         "description": "Fetch a specific Entity.",
         "parameters": [
           {
@@ -2573,7 +2651,9 @@
           }
         ],
         "operationId": "FetchEntity",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Factors/{Sid}": {
@@ -2594,7 +2674,6 @@
         "parent": "/Services/{ServiceSid}/Entities"
       },
       "delete": {
-        "tags": ["Factors"],
         "description": "Delete a specific Factor.",
         "parameters": [
           {
@@ -2642,10 +2721,11 @@
           }
         ],
         "operationId": "DeleteFactor",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       },
       "get": {
-        "tags": ["Factors"],
         "description": "Fetch a specific Factor.",
         "parameters": [
           {
@@ -2700,10 +2780,11 @@
           }
         ],
         "operationId": "FetchFactor",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       },
       "post": {
-        "tags": ["Factors"],
         "description": "Update a specific Factor. This endpoint can be used to Verify a Factor if passed an `AuthPayload` param.",
         "parameters": [
           {
@@ -2758,7 +2839,9 @@
           }
         ],
         "operationId": "UpdateFactor",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2828,7 +2911,6 @@
         "parent": "/Services/{ServiceSid}/Entities"
       },
       "get": {
-        "tags": ["Factors"],
         "description": "Retrieve a list of all Factors for an Entity.",
         "parameters": [
           {
@@ -2920,10 +3002,11 @@
           }
         ],
         "operationId": "ListFactor",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       },
       "post": {
-        "tags": ["Factors"],
         "description": "Create a new Factor for the Entity",
         "parameters": [
           {
@@ -2966,7 +3049,9 @@
           }
         ],
         "operationId": "CreateNewFactor",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3033,7 +3118,10 @@
                     "description": "Custom metadata associated with the factor. This is added by the Device/SDK directly to allow for the inclusion of device information. It must be a stringified JSON with only strings values eg. `{\"os\": \"Android\"}`. Can be up to 1024 characters in length."
                   }
                 },
-                "required": ["FriendlyName", "FactorType"]
+                "required": [
+                  "FriendlyName",
+                  "FactorType"
+                ]
               }
             }
           }
@@ -3051,11 +3139,12 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": ["form_type"],
+        "defaultOutputProperties": [
+          "form_type"
+        ],
         "pathType": "instance"
       },
       "get": {
-        "tags": ["Forms"],
         "description": "Fetch the forms for a specific Form Type.",
         "parameters": [
           {
@@ -3087,7 +3176,9 @@
           }
         ],
         "operationId": "FetchForm",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/MessagingConfigurations": {
@@ -3110,7 +3201,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Messaging Configurations"],
         "description": "Create a new MessagingConfiguration for a service.",
         "parameters": [
           {
@@ -3144,7 +3234,9 @@
           }
         ],
         "operationId": "CreateMessagingConfiguration",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3164,14 +3256,16 @@
                     "description": "The SID of the [Messaging Service](https://www.twilio.com/docs/sms/services/api) to be used to send SMS to the country of this configuration."
                   }
                 },
-                "required": ["Country", "MessagingServiceSid"]
+                "required": [
+                  "Country",
+                  "MessagingServiceSid"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Messaging Configurations"],
         "description": "Retrieve a list of all Messaging Configurations for a Service.",
         "parameters": [
           {
@@ -3254,7 +3348,9 @@
           }
         ],
         "operationId": "ListMessagingConfiguration",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/MessagingConfigurations/{Country}": {
@@ -3277,7 +3373,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Messaging Configurations"],
         "description": "Update a specific MessagingConfiguration",
         "parameters": [
           {
@@ -3320,7 +3415,9 @@
           }
         ],
         "operationId": "UpdateMessagingConfiguration",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3336,14 +3433,15 @@
                     "description": "The SID of the [Messaging Service](https://www.twilio.com/docs/sms/services/api) to be used to send SMS to the country of this configuration."
                   }
                 },
-                "required": ["MessagingServiceSid"]
+                "required": [
+                  "MessagingServiceSid"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Messaging Configurations"],
         "description": "Fetch a specific MessagingConfiguration.",
         "parameters": [
           {
@@ -3386,10 +3484,11 @@
           }
         ],
         "operationId": "FetchMessagingConfiguration",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       },
       "delete": {
-        "tags": ["Messaging Configurations"],
         "description": "Delete a specific MessagingConfiguration.",
         "parameters": [
           {
@@ -3425,7 +3524,9 @@
           }
         ],
         "operationId": "DeleteMessagingConfiguration",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges/{ChallengeSid}/Notifications": {
@@ -3446,7 +3547,6 @@
         "parent": "/Services/{ServiceSid}/Entities/{Identity}/Challenges"
       },
       "post": {
-        "tags": ["Challenges"],
         "description": "Create a new Notification for the corresponding Challenge",
         "parameters": [
           {
@@ -3501,7 +3601,9 @@
           }
         ],
         "operationId": "CreateNotification",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3541,7 +3643,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Rate Limits"],
         "description": "Create a new Rate Limit for a Service",
         "parameters": [
           {
@@ -3575,7 +3676,9 @@
           }
         ],
         "operationId": "CreateRateLimit",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3592,15 +3695,16 @@
                     "description": "Description of this Rate Limit"
                   }
                 },
-                "required": ["UniqueName"]
+                "required": [
+                  "UniqueName"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Rate Limits"],
-        "description": "Retrieve a list of all Buckets for a service.",
+        "description": "Retrieve a list of all Rate Limits for a service.",
         "parameters": [
           {
             "name": "ServiceSid",
@@ -3682,7 +3786,9 @@
           }
         ],
         "operationId": "ListRateLimit",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/RateLimits/{Sid}": {
@@ -3706,7 +3812,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Rate Limits"],
         "description": "Update a specific Rate Limit.",
         "parameters": [
           {
@@ -3752,7 +3857,9 @@
           }
         ],
         "operationId": "UpdateRateLimit",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3771,7 +3878,6 @@
         }
       },
       "get": {
-        "tags": ["Rate Limits"],
         "description": "Fetch a specific Rate Limit.",
         "parameters": [
           {
@@ -3817,10 +3923,11 @@
           }
         ],
         "operationId": "FetchRateLimit",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       },
       "delete": {
-        "tags": ["Rate Limits"],
         "description": "Delete a specific Rate Limit.",
         "parameters": [
           {
@@ -3859,7 +3966,9 @@
           }
         ],
         "operationId": "DeleteRateLimit",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services": {
@@ -3870,11 +3979,14 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "date_created"
+        ],
         "pathType": "list"
       },
       "post": {
-        "tags": ["Services"],
         "description": "Create a new Verification Service.",
         "responses": {
           "201": {
@@ -3894,7 +4006,9 @@
           }
         ],
         "operationId": "CreateService",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3980,14 +4094,15 @@
                     "description": "The default message [template](https://www.twilio.com/docs/verify/api/templates). Will be used for all SMS verifications unless explicitly overriden. SMS channel only."
                   }
                 },
-                "required": ["FriendlyName"]
+                "required": [
+                  "FriendlyName"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Services"],
         "description": "Retrieve a list of all Verification Services for an account.",
         "parameters": [
           {
@@ -4058,7 +4173,9 @@
           }
         ],
         "operationId": "ListService",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{Sid}": {
@@ -4069,11 +4186,14 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "date_created"
+        ],
         "pathType": "instance"
       },
       "get": {
-        "tags": ["Services"],
         "description": "Fetch specific Verification Service Instance.",
         "parameters": [
           {
@@ -4107,10 +4227,11 @@
           }
         ],
         "operationId": "FetchService",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       },
       "delete": {
-        "tags": ["Services"],
         "description": "Delete a specific Verification Service Instance.",
         "parameters": [
           {
@@ -4137,10 +4258,11 @@
           }
         ],
         "operationId": "DeleteService",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       },
       "post": {
-        "tags": ["Services"],
         "description": "Update a specific Verification Service.",
         "parameters": [
           {
@@ -4174,7 +4296,9 @@
           }
         ],
         "operationId": "UpdateService",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4286,7 +4410,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Verifications"],
         "description": "Create a new Verification using a Service",
         "parameters": [
           {
@@ -4320,7 +4443,9 @@
           }
         ],
         "operationId": "CreateVerification",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4386,7 +4511,10 @@
                     "description": "A stringified JSON object in which the keys are the template's special variables and the values are the variables substitutions."
                   }
                 },
-                "required": ["To", "Channel"]
+                "required": [
+                  "To",
+                  "Channel"
+                ]
               }
             }
           }
@@ -4413,7 +4541,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Verifications"],
         "description": "Update a Verification status",
         "parameters": [
           {
@@ -4456,7 +4583,9 @@
           }
         ],
         "operationId": "UpdateVerification",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4470,14 +4599,15 @@
                     "description": "The new status of the resource. Can be: `canceled` or `approved`."
                   }
                 },
-                "required": ["Status"]
+                "required": [
+                  "Status"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Verifications"],
         "description": "Fetch a specific Verification",
         "parameters": [
           {
@@ -4520,7 +4650,9 @@
           }
         ],
         "operationId": "FetchVerification",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Attempts": {
@@ -4542,7 +4674,6 @@
         "className": "verification_attempt"
       },
       "get": {
-        "tags": ["Attempts"],
         "description": "List all the verification attempts for a given Account.",
         "parameters": [
           {
@@ -4688,7 +4819,9 @@
           }
         ],
         "operationId": "ListVerificationAttempt",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Attempts/{Sid}": {
@@ -4710,7 +4843,6 @@
         "className": "verification_attempt"
       },
       "get": {
-        "tags": ["Attempts"],
         "description": "Fetch a specific verification attempt.",
         "parameters": [
           {
@@ -4744,7 +4876,9 @@
           }
         ],
         "operationId": "FetchVerificationAttempt",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Attempts/Summary": {
@@ -4765,7 +4899,6 @@
         "className": "verification_attempts_summary"
       },
       "get": {
-        "tags": ["Attempts"],
         "description": "Get a summary of how many attempts were made and how many were converted.",
         "parameters": [
           {
@@ -4842,7 +4975,9 @@
           }
         ],
         "operationId": "FetchVerificationAttemptsSummary",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/VerificationCheck": {
@@ -4865,7 +5000,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Verifications"],
         "description": "challenge a specific Verification Check.",
         "parameters": [
           {
@@ -4899,7 +5033,9 @@
           }
         ],
         "operationId": "CreateVerificationCheck",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4945,11 +5081,13 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name"
+        ],
         "pathType": "list"
       },
       "get": {
-        "tags": ["Templates"],
         "description": "List all the available templates for a given Account.",
         "parameters": [
           {
@@ -5028,7 +5166,9 @@
           }
         ],
         "operationId": "ListVerificationTemplate",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/Webhooks": {
@@ -5053,7 +5193,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Webhooks"],
         "description": "Create a new Webhook for the Service",
         "parameters": [
           {
@@ -5087,7 +5226,9 @@
           }
         ],
         "operationId": "CreateWebhook",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5121,14 +5262,17 @@
                     "description": "The webhook version. Default value is `v2` which includes all the latest fields. Version `v1` is legacy and may be removed in the future."
                   }
                 },
-                "required": ["FriendlyName", "EventTypes", "WebhookUrl"]
+                "required": [
+                  "FriendlyName",
+                  "EventTypes",
+                  "WebhookUrl"
+                ]
               }
             }
           }
         }
       },
       "get": {
-        "tags": ["Webhooks"],
         "description": "Retrieve a list of all Webhooks for a Service.",
         "parameters": [
           {
@@ -5211,7 +5355,9 @@
           }
         ],
         "operationId": "ListWebhook",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       }
     },
     "/v2/Services/{ServiceSid}/Webhooks/{Sid}": {
@@ -5236,7 +5382,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Webhooks"],
         "description": "",
         "parameters": [
           {
@@ -5282,7 +5427,9 @@
           }
         ],
         "operationId": "UpdateWebhook",
-        "x-maturity": ["Beta"],
+        "x-maturity": [
+          "Beta"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5322,7 +5469,6 @@
         }
       },
       "delete": {
-        "tags": ["Webhooks"],
         "description": "Delete a specific Webhook.",
         "parameters": [
           {
@@ -5361,10 +5507,11 @@
           }
         ],
         "operationId": "DeleteWebhook",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       },
       "get": {
-        "tags": ["Webhooks"],
         "description": "Fetch a specific Webhook.",
         "parameters": [
           {
@@ -5410,7 +5557,9 @@
           }
         ],
         "operationId": "FetchWebhook",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ]
       }
     }
   },
