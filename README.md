@@ -50,15 +50,8 @@ Click one of the links below to view the Swagger Doc.
 - [twilio-oai](https://github.com/twilio/twilio-oai) - Twilio OpenAPI Repo
 - [swagger-ui](https://github.com/swagger-api/swagger-ui) - Swagger UI Repo
 
-## Test relative links
+<!-- ## Test relative links
 
-- [/](/)
-- [./](./)
-- [../](../)
-- [../../](../../)
-- [../../../](../../../)
-- [/apis/messaging/](/apis/messaging/)
-- [./apis/messaging/](./apis/messaging/)
-- [../apis/messaging/](../apis/messaging/)
-- [../../apis/messaging/](../../apis/messaging/)
-- [../../../apis/messaging/](../../../apis/messaging/)
+- [https://github.com/<username>](../../../)
+- [https://github.com/<username>/twilio-swagger](../../)
+ -->
