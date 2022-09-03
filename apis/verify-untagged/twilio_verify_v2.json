@@ -70,9 +70,7 @@
       },
       "access_token_enum_factor_types": {
         "type": "string",
-        "enum": [
-          "push"
-        ]
+        "enum": ["push"]
       },
       "verify.v2.service.rate_limit.bucket": {
         "type": "object",
@@ -257,34 +255,19 @@
       },
       "challenge_enum_challenge_statuses": {
         "type": "string",
-        "enum": [
-          "pending",
-          "expired",
-          "approved",
-          "denied"
-        ]
+        "enum": ["pending", "expired", "approved", "denied"]
       },
       "challenge_enum_challenge_reasons": {
         "type": "string",
-        "enum": [
-          "none",
-          "not_needed",
-          "not_requested"
-        ]
+        "enum": ["none", "not_needed", "not_requested"]
       },
       "challenge_enum_factor_types": {
         "type": "string",
-        "enum": [
-          "push",
-          "totp"
-        ]
+        "enum": ["push", "totp"]
       },
       "challenge_enum_list_orders": {
         "type": "string",
-        "enum": [
-          "asc",
-          "desc"
-        ]
+        "enum": ["asc", "desc"]
       },
       "verify.v2.service.entity": {
         "type": "object",
@@ -431,33 +414,19 @@
       },
       "factor_enum_factor_statuses": {
         "type": "string",
-        "enum": [
-          "unverified",
-          "verified"
-        ]
+        "enum": ["unverified", "verified"]
       },
       "factor_enum_factor_types": {
         "type": "string",
-        "enum": [
-          "push",
-          "totp"
-        ]
+        "enum": ["push", "totp"]
       },
       "factor_enum_notification_platforms": {
         "type": "string",
-        "enum": [
-          "apn",
-          "fcm",
-          "none"
-        ]
+        "enum": ["apn", "fcm", "none"]
       },
       "factor_enum_totp_algorithms": {
         "type": "string",
-        "enum": [
-          "sha1",
-          "sha256",
-          "sha512"
-        ]
+        "enum": ["sha1", "sha256", "sha512"]
       },
       "verify.v2.form": {
         "type": "object",
@@ -486,9 +455,7 @@
       },
       "form_enum_form_types": {
         "type": "string",
-        "enum": [
-          "form-push"
-        ]
+        "enum": ["form-push"]
       },
       "verify.v2.service.messaging_configuration": {
         "type": "object",
@@ -633,33 +600,19 @@
       },
       "new_factor_enum_factor_statuses": {
         "type": "string",
-        "enum": [
-          "unverified",
-          "verified"
-        ]
+        "enum": ["unverified", "verified"]
       },
       "new_factor_enum_factor_types": {
         "type": "string",
-        "enum": [
-          "push",
-          "totp"
-        ]
+        "enum": ["push", "totp"]
       },
       "new_factor_enum_notification_platforms": {
         "type": "string",
-        "enum": [
-          "apn",
-          "fcm",
-          "none"
-        ]
+        "enum": ["apn", "fcm", "none"]
       },
       "new_factor_enum_totp_algorithms": {
         "type": "string",
-        "enum": [
-          "sha1",
-          "sha256",
-          "sha512"
-        ]
+        "enum": ["sha1", "sha256", "sha512"]
       },
       "verify.v2.service.entity.challenge.notification": {
         "type": "object",
@@ -989,20 +942,11 @@
       },
       "verification_enum_channel": {
         "type": "string",
-        "enum": [
-          "sms",
-          "call",
-          "email",
-          "whatsapp",
-          "sna"
-        ]
+        "enum": ["sms", "call", "email", "whatsapp", "sna"]
       },
       "verification_enum_status": {
         "type": "string",
-        "enum": [
-          "canceled",
-          "approved"
-        ]
+        "enum": ["canceled", "approved"]
       },
       "verify.v2.verification_attempt": {
         "type": "object",
@@ -1080,12 +1024,7 @@
       },
       "verification_attempt_enum_channels": {
         "type": "string",
-        "enum": [
-          "sms",
-          "call",
-          "email",
-          "whatsapp"
-        ]
+        "enum": ["sms", "call", "email", "whatsapp"]
       },
       "verification_attempt_enum_call_status": {
         "type": "string",
@@ -1120,18 +1059,11 @@
       },
       "verification_attempt_enum_conversion_status": {
         "type": "string",
-        "enum": [
-          "converted",
-          "unconverted"
-        ]
+        "enum": ["converted", "unconverted"]
       },
       "verification_attempt_enum_attempt_status": {
         "type": "string",
-        "enum": [
-          "confirmed",
-          "unconfirmed",
-          "expired"
-        ]
+        "enum": ["confirmed", "unconfirmed", "expired"]
       },
       "verify.v2.verification_attempts_summary": {
         "type": "object",
@@ -1165,12 +1097,7 @@
       },
       "verification_attempts_summary_enum_channels": {
         "type": "string",
-        "enum": [
-          "sms",
-          "call",
-          "email",
-          "whatsapp"
-        ]
+        "enum": ["sms", "call", "email", "whatsapp"]
       },
       "verify.v2.service.verification_check": {
         "type": "object",
@@ -1252,13 +1179,7 @@
       },
       "verification_check_enum_channel": {
         "type": "string",
-        "enum": [
-          "sms",
-          "call",
-          "email",
-          "whatsapp",
-          "sna"
-        ]
+        "enum": ["sms", "call", "email", "whatsapp", "sna"]
       },
       "verify.v2.verification_template": {
         "type": "object",
@@ -1376,24 +1297,15 @@
       },
       "webhook_enum_status": {
         "type": "string",
-        "enum": [
-          "enabled",
-          "disabled"
-        ]
+        "enum": ["enabled", "disabled"]
       },
       "webhook_enum_version": {
         "type": "string",
-        "enum": [
-          "v1",
-          "v2"
-        ]
+        "enum": ["v1", "v2"]
       },
       "webhook_enum_methods": {
         "type": "string",
-        "enum": [
-          "GET",
-          "POST"
-        ]
+        "enum": ["GET", "POST"]
       }
     },
     "securitySchemes": {
@@ -1416,7 +1328,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "version": "1.32.0"
+    "version": "1.34.0"
   },
   "openapi": "3.0.1",
   "paths": {
@@ -1476,9 +1388,7 @@
           }
         ],
         "operationId": "CreateAccessToken",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1504,10 +1414,7 @@
                     "description": "How long, in seconds, the access token is valid. Can be an integer between 60 and 300. Default is 60."
                   }
                 },
-                "required": [
-                  "Identity",
-                  "FactorType"
-                ]
+                "required": ["Identity", "FactorType"]
               }
             }
           }
@@ -1582,9 +1489,7 @@
           }
         ],
         "operationId": "FetchAccessToken",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets": {
@@ -1654,9 +1559,7 @@
           }
         ],
         "operationId": "CreateBucket",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1673,10 +1576,7 @@
                     "description": "Number of seconds that the rate limit will be enforced over."
                   }
                 },
-                "required": [
-                  "Max",
-                  "Interval"
-                ]
+                "required": ["Max", "Interval"]
               }
             }
           }
@@ -1777,9 +1677,7 @@
           }
         ],
         "operationId": "ListBucket",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{ServiceSid}/RateLimits/{RateLimitSid}/Buckets/{Sid}": {
@@ -1861,9 +1759,7 @@
           }
         ],
         "operationId": "UpdateBucket",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1943,9 +1839,7 @@
           }
         ],
         "operationId": "FetchBucket",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       },
       "delete": {
         "description": "Delete a specific Bucket.",
@@ -1998,9 +1892,7 @@
           }
         ],
         "operationId": "DeleteBucket",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges": {
@@ -2063,9 +1955,7 @@
           }
         ],
         "operationId": "CreateChallenge",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2102,9 +1992,7 @@
                     "description": "Optional payload used to verify the Challenge upon creation. Only used with a Factor of type `totp` to carry the TOTP code that needs to be verified. For `TOTP` this value must be between 3 and 8 characters long."
                   }
                 },
-                "required": [
-                  "FactorSid"
-                ]
+                "required": ["FactorSid"]
               }
             }
           }
@@ -2231,9 +2119,7 @@
           }
         ],
         "operationId": "ListChallenge",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges/{Sid}": {
@@ -2308,9 +2194,7 @@
           }
         ],
         "operationId": "FetchChallenge",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "post": {
         "description": "Verify a specific Challenge.",
@@ -2367,9 +2251,7 @@
           }
         ],
         "operationId": "UpdateChallenge",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2399,11 +2281,7 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "identity",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "identity", "date_created"],
         "pathType": "list",
         "parent": "/Services"
       },
@@ -2441,9 +2319,7 @@
           }
         ],
         "operationId": "CreateEntity",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2456,9 +2332,7 @@
                     "description": "The unique external identifier for the Entity of the Service. This identifier should be immutable, not PII, length between 8 and 64 characters, and generated by your external system, such as your user's UUID, GUID, or SID. It can only contain dash (-) separated alphanumeric characters."
                   }
                 },
-                "required": [
-                  "Identity"
-                ]
+                "required": ["Identity"]
               }
             }
           }
@@ -2547,9 +2421,7 @@
           }
         ],
         "operationId": "ListEntity",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}": {
@@ -2560,11 +2432,7 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "identity",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "identity", "date_created"],
         "pathType": "instance",
         "parent": "/Services"
       },
@@ -2604,9 +2472,7 @@
           }
         ],
         "operationId": "DeleteEntity",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "get": {
         "description": "Fetch a specific Entity.",
@@ -2651,9 +2517,7 @@
           }
         ],
         "operationId": "FetchEntity",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Factors/{Sid}": {
@@ -2721,9 +2585,7 @@
           }
         ],
         "operationId": "DeleteFactor",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "get": {
         "description": "Fetch a specific Factor.",
@@ -2780,9 +2642,7 @@
           }
         ],
         "operationId": "FetchFactor",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "post": {
         "description": "Update a specific Factor. This endpoint can be used to Verify a Factor if passed an `AuthPayload` param.",
@@ -2839,9 +2699,7 @@
           }
         ],
         "operationId": "UpdateFactor",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3002,9 +2860,7 @@
           }
         ],
         "operationId": "ListFactor",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "post": {
         "description": "Create a new Factor for the Entity",
@@ -3049,9 +2905,7 @@
           }
         ],
         "operationId": "CreateNewFactor",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3118,10 +2972,7 @@
                     "description": "Custom metadata associated with the factor. This is added by the Device/SDK directly to allow for the inclusion of device information. It must be a stringified JSON with only strings values eg. `{\"os\": \"Android\"}`. Can be up to 1024 characters in length."
                   }
                 },
-                "required": [
-                  "FriendlyName",
-                  "FactorType"
-                ]
+                "required": ["FriendlyName", "FactorType"]
               }
             }
           }
@@ -3139,9 +2990,7 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "form_type"
-        ],
+        "defaultOutputProperties": ["form_type"],
         "pathType": "instance"
       },
       "get": {
@@ -3176,9 +3025,7 @@
           }
         ],
         "operationId": "FetchForm",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v2/Services/{ServiceSid}/MessagingConfigurations": {
@@ -3234,9 +3081,7 @@
           }
         ],
         "operationId": "CreateMessagingConfiguration",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3256,10 +3101,7 @@
                     "description": "The SID of the [Messaging Service](https://www.twilio.com/docs/sms/services/api) to be used to send SMS to the country of this configuration."
                   }
                 },
-                "required": [
-                  "Country",
-                  "MessagingServiceSid"
-                ]
+                "required": ["Country", "MessagingServiceSid"]
               }
             }
           }
@@ -3348,9 +3190,7 @@
           }
         ],
         "operationId": "ListMessagingConfiguration",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{ServiceSid}/MessagingConfigurations/{Country}": {
@@ -3415,9 +3255,7 @@
           }
         ],
         "operationId": "UpdateMessagingConfiguration",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3433,9 +3271,7 @@
                     "description": "The SID of the [Messaging Service](https://www.twilio.com/docs/sms/services/api) to be used to send SMS to the country of this configuration."
                   }
                 },
-                "required": [
-                  "MessagingServiceSid"
-                ]
+                "required": ["MessagingServiceSid"]
               }
             }
           }
@@ -3484,9 +3320,7 @@
           }
         ],
         "operationId": "FetchMessagingConfiguration",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       },
       "delete": {
         "description": "Delete a specific MessagingConfiguration.",
@@ -3524,9 +3358,7 @@
           }
         ],
         "operationId": "DeleteMessagingConfiguration",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{ServiceSid}/Entities/{Identity}/Challenges/{ChallengeSid}/Notifications": {
@@ -3601,9 +3433,7 @@
           }
         ],
         "operationId": "CreateNotification",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3676,9 +3506,7 @@
           }
         ],
         "operationId": "CreateRateLimit",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3695,9 +3523,7 @@
                     "description": "Description of this Rate Limit"
                   }
                 },
-                "required": [
-                  "UniqueName"
-                ]
+                "required": ["UniqueName"]
               }
             }
           }
@@ -3786,9 +3612,7 @@
           }
         ],
         "operationId": "ListRateLimit",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{ServiceSid}/RateLimits/{Sid}": {
@@ -3857,9 +3681,7 @@
           }
         ],
         "operationId": "UpdateRateLimit",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3923,9 +3745,7 @@
           }
         ],
         "operationId": "FetchRateLimit",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       },
       "delete": {
         "description": "Delete a specific Rate Limit.",
@@ -3966,9 +3786,7 @@
           }
         ],
         "operationId": "DeleteRateLimit",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services": {
@@ -3979,11 +3797,7 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "friendly_name",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "friendly_name", "date_created"],
         "pathType": "list"
       },
       "post": {
@@ -4006,9 +3820,7 @@
           }
         ],
         "operationId": "CreateService",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4094,9 +3906,7 @@
                     "description": "The default message [template](https://www.twilio.com/docs/verify/api/templates). Will be used for all SMS verifications unless explicitly overriden. SMS channel only."
                   }
                 },
-                "required": [
-                  "FriendlyName"
-                ]
+                "required": ["FriendlyName"]
               }
             }
           }
@@ -4173,9 +3983,7 @@
           }
         ],
         "operationId": "ListService",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{Sid}": {
@@ -4186,11 +3994,7 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "friendly_name",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "friendly_name", "date_created"],
         "pathType": "instance"
       },
       "get": {
@@ -4227,9 +4031,7 @@
           }
         ],
         "operationId": "FetchService",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       },
       "delete": {
         "description": "Delete a specific Verification Service Instance.",
@@ -4258,9 +4060,7 @@
           }
         ],
         "operationId": "DeleteService",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       },
       "post": {
         "description": "Update a specific Verification Service.",
@@ -4296,9 +4096,7 @@
           }
         ],
         "operationId": "UpdateService",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4443,9 +4241,7 @@
           }
         ],
         "operationId": "CreateVerification",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4459,7 +4255,7 @@
                   },
                   "Channel": {
                     "type": "string",
-                    "description": "The verification method to use. Can be: [`email`](https://www.twilio.com/docs/verify/email), `sms`, `whatsapp` or `call`."
+                    "description": "The verification method to use. One of: [`email`](https://www.twilio.com/docs/verify/email), `sms`, `whatsapp`, `call`, or `sna`."
                   },
                   "CustomFriendlyName": {
                     "type": "string",
@@ -4475,7 +4271,7 @@
                   },
                   "Locale": {
                     "type": "string",
-                    "description": "The locale to use for the verification SMS, WhatsApp or call. Can be: `af`, `ar`, `ca`, `cs`, `da`, `de`, `el`, `en`, `en-GB`, `es`, `fi`, `fr`, `he`, `hi`, `hr`, `hu`, `id`, `it`, `ja`, `ko`, `ms`, `nb`, `nl`, `pl`, `pt`, `pr-BR`, `ro`, `ru`, `sv`, `th`, `tl`, `tr`, `vi`, `zh`, `zh-CN`, or `zh-HK.`"
+                    "description": "Locale will automatically resolve based on phone number country code for SMS, WhatsApp and call channel verifications. This parameter will override the automatic locale. [See supported languages and more information here.](https://www.twilio.com/docs/verify/supported-languages)."
                   },
                   "CustomCode": {
                     "type": "string",
@@ -4511,10 +4307,7 @@
                     "description": "A stringified JSON object in which the keys are the template's special variables and the values are the variables substitutions."
                   }
                 },
-                "required": [
-                  "To",
-                  "Channel"
-                ]
+                "required": ["To", "Channel"]
               }
             }
           }
@@ -4583,9 +4376,7 @@
           }
         ],
         "operationId": "UpdateVerification",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4599,9 +4390,7 @@
                     "description": "The new status of the resource. Can be: `canceled` or `approved`."
                   }
                 },
-                "required": [
-                  "Status"
-                ]
+                "required": ["Status"]
               }
             }
           }
@@ -4650,9 +4439,7 @@
           }
         ],
         "operationId": "FetchVerification",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Attempts": {
@@ -4819,9 +4606,7 @@
           }
         ],
         "operationId": "ListVerificationAttempt",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Attempts/{Sid}": {
@@ -4876,9 +4661,7 @@
           }
         ],
         "operationId": "FetchVerificationAttempt",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Attempts/Summary": {
@@ -4975,9 +4758,7 @@
           }
         ],
         "operationId": "FetchVerificationAttemptsSummary",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{ServiceSid}/VerificationCheck": {
@@ -5033,9 +4814,7 @@
           }
         ],
         "operationId": "CreateVerificationCheck",
-        "x-maturity": [
-          "GA"
-        ],
+        "x-maturity": ["GA"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5081,10 +4860,7 @@
       ],
       "description": "TODO: Resource-level docs",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "friendly_name"
-        ],
+        "defaultOutputProperties": ["sid", "friendly_name"],
         "pathType": "list"
       },
       "get": {
@@ -5166,9 +4942,7 @@
           }
         ],
         "operationId": "ListVerificationTemplate",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v2/Services/{ServiceSid}/Webhooks": {
@@ -5226,9 +5000,7 @@
           }
         ],
         "operationId": "CreateWebhook",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5262,11 +5034,7 @@
                     "description": "The webhook version. Default value is `v2` which includes all the latest fields. Version `v1` is legacy and may be removed in the future."
                   }
                 },
-                "required": [
-                  "FriendlyName",
-                  "EventTypes",
-                  "WebhookUrl"
-                ]
+                "required": ["FriendlyName", "EventTypes", "WebhookUrl"]
               }
             }
           }
@@ -5355,9 +5123,7 @@
           }
         ],
         "operationId": "ListWebhook",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v2/Services/{ServiceSid}/Webhooks/{Sid}": {
@@ -5427,9 +5193,7 @@
           }
         ],
         "operationId": "UpdateWebhook",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5507,9 +5271,7 @@
           }
         ],
         "operationId": "DeleteWebhook",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "get": {
         "description": "Fetch a specific Webhook.",
@@ -5557,9 +5319,7 @@
           }
         ],
         "operationId": "FetchWebhook",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     }
   },
