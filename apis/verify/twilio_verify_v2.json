@@ -1331,47 +1331,6 @@
     "version": "1.34.0"
   },
   "openapi": "3.0.1",
-  "tags": [
-    {
-      "name": "Services"
-    },
-    {
-      "name": "Verifications"
-    },
-    {
-      "name": "Attempts"
-    },
-    {
-      "name": "Access Tokens"
-    },
-    {
-      "name": "Buckets"
-    },
-    {
-      "name": "Entities"
-    },
-    {
-      "name": "Challenges"
-    },
-    {
-      "name": "Factors"
-    },
-    {
-      "name": "Forms"
-    },
-    {
-      "name": "Messaging Configurations"
-    },
-    {
-      "name": "Rate Limits"
-    },
-    {
-      "name": "Templates"
-    },
-    {
-      "name": "Webhooks"
-    }
-  ],
   "paths": {
     "/v2/Services/{ServiceSid}/AccessTokens": {
       "servers": [
