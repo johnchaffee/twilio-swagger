@@ -189,22 +189,11 @@
       },
       "brand_registrations_enum_status": {
         "type": "string",
-        "enum": [
-          "PENDING",
-          "APPROVED",
-          "FAILED",
-          "IN_REVIEW",
-          "DELETED"
-        ]
+        "enum": ["PENDING", "APPROVED", "FAILED", "IN_REVIEW", "DELETED"]
       },
       "brand_registrations_enum_identity_status": {
         "type": "string",
-        "enum": [
-          "SELF_DECLARED",
-          "UNVERIFIED",
-          "VERIFIED",
-          "VETTED_VERIFIED"
-        ]
+        "enum": ["SELF_DECLARED", "UNVERIFIED", "VERIFIED", "VETTED_VERIFIED"]
       },
       "brand_registrations_enum_brand_feedback": {
         "type": "string",
@@ -286,9 +275,7 @@
       },
       "brand_vetting_enum_vetting_provider": {
         "type": "string",
-        "enum": [
-          "campaign-verify"
-        ]
+        "enum": ["campaign-verify"]
       },
       "messaging.v1.deactivation": {
         "type": "object",
@@ -452,14 +439,7 @@
           "inbound_method": {
             "type": "string",
             "format": "http-method",
-            "enum": [
-              "HEAD",
-              "GET",
-              "POST",
-              "PATCH",
-              "PUT",
-              "DELETE"
-            ],
+            "enum": ["HEAD", "GET", "POST", "PATCH", "PUT", "DELETE"],
             "nullable": true,
             "description": "The HTTP method we use to call inbound_request_url"
           },
@@ -472,14 +452,7 @@
           "fallback_method": {
             "type": "string",
             "format": "http-method",
-            "enum": [
-              "HEAD",
-              "GET",
-              "POST",
-              "PATCH",
-              "PUT",
-              "DELETE"
-            ],
+            "enum": ["HEAD", "GET", "POST", "PATCH", "PUT", "DELETE"],
             "nullable": true,
             "description": "The HTTP method we use to call fallback_url"
           },
@@ -561,11 +534,7 @@
       },
       "service_enum_scan_message_content": {
         "type": "string",
-        "enum": [
-          "inherit",
-          "enable",
-          "disable"
-        ]
+        "enum": ["inherit", "enable", "disable"]
       },
       "messaging.v1.service.short_code": {
         "type": "object",
@@ -794,14 +763,12 @@
       ],
       "description": "A Messaging Service resource to add, fetch or remove an Alpha Sender ID from a Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "alpha_sender"
-        ],
+        "defaultOutputProperties": ["sid", "alpha_sender"],
         "pathType": "list",
         "parent": "/Services"
       },
       "post": {
+        "tags": ["AlphaSenders"],
         "description": "",
         "parameters": [
           {
@@ -835,9 +802,7 @@
           }
         ],
         "operationId": "CreateAlphaSender",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -850,15 +815,14 @@
                     "description": "The Alphanumeric Sender ID string. Can be up to 11 characters long. Valid characters are A-Z, a-z, 0-9, space, hyphen `-`, plus `+`, underscore `_` and ampersand `&`. This value cannot contain only numbers."
                   }
                 },
-                "required": [
-                  "AlphaSender"
-                ]
+                "required": ["AlphaSender"]
               }
             }
           }
         }
       },
       "get": {
+        "tags": ["AlphaSenders"],
         "description": "",
         "parameters": [
           {
@@ -941,9 +905,7 @@
           }
         ],
         "operationId": "ListAlphaSender",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{ServiceSid}/AlphaSenders/{Sid}": {
@@ -954,14 +916,12 @@
       ],
       "description": "A Messaging Service resource to add, fetch or remove an Alpha Sender ID from a Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "alpha_sender"
-        ],
+        "defaultOutputProperties": ["sid", "alpha_sender"],
         "pathType": "instance",
         "parent": "/Services"
       },
       "get": {
+        "tags": ["AlphaSenders"],
         "description": "",
         "parameters": [
           {
@@ -1004,11 +964,10 @@
           }
         ],
         "operationId": "FetchAlphaSender",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "delete": {
+        "tags": ["AlphaSenders"],
         "description": "",
         "parameters": [
           {
@@ -1044,9 +1003,7 @@
           }
         ],
         "operationId": "DeleteAlphaSender",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/a2p/BrandRegistrations/{Sid}": {
@@ -1057,13 +1014,11 @@
       ],
       "description": "A Messaging Service resource to add and fetch Brand Registrations.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "date_created"],
         "pathType": "instance"
       },
       "get": {
+        "tags": ["Brand Registrations"],
         "description": "",
         "parameters": [
           {
@@ -1097,11 +1052,10 @@
           }
         ],
         "operationId": "FetchBrandRegistrations",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "post": {
+        "tags": ["Brand Registrations"],
         "description": "",
         "parameters": [
           {
@@ -1135,9 +1089,7 @@
           }
         ],
         "operationId": "UpdateBrandRegistrations",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/a2p/BrandRegistrations": {
@@ -1148,13 +1100,11 @@
       ],
       "description": "A Messaging Service resource to add and fetch Brand Registrations.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "date_created"],
         "pathType": "list"
       },
       "get": {
+        "tags": ["Brand Registrations"],
         "description": "",
         "parameters": [
           {
@@ -1225,11 +1175,10 @@
           }
         ],
         "operationId": "ListBrandRegistrations",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "post": {
+        "tags": ["Brand Registrations"],
         "description": "",
         "responses": {
           "201": {
@@ -1249,9 +1198,7 @@
           }
         ],
         "operationId": "CreateBrandRegistrations",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1286,10 +1233,7 @@
                     "description": "A flag to disable automatic secondary vetting for brands which it would otherwise be done."
                   }
                 },
-                "required": [
-                  "CustomerProfileBundleSid",
-                  "A2PProfileBundleSid"
-                ]
+                "required": ["CustomerProfileBundleSid", "A2PProfileBundleSid"]
               }
             }
           }
@@ -1318,6 +1262,7 @@
         "className": "brand_vetting"
       },
       "post": {
+        "tags": ["Vettings"],
         "description": "",
         "parameters": [
           {
@@ -1351,9 +1296,7 @@
           }
         ],
         "operationId": "CreateBrandVetting",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1371,15 +1314,14 @@
                     "description": "The unique ID of the vetting"
                   }
                 },
-                "required": [
-                  "VettingProvider"
-                ]
+                "required": ["VettingProvider"]
               }
             }
           }
         }
       },
       "get": {
+        "tags": ["Vettings"],
         "description": "",
         "parameters": [
           {
@@ -1471,9 +1413,7 @@
           }
         ],
         "operationId": "ListBrandVetting",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/a2p/BrandRegistrations/{BrandSid}/Vettings/{BrandVettingSid}": {
@@ -1498,6 +1438,7 @@
         "className": "brand_vetting"
       },
       "get": {
+        "tags": ["Vettings"],
         "description": "",
         "parameters": [
           {
@@ -1543,9 +1484,7 @@
           }
         ],
         "operationId": "FetchBrandVetting",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Deactivations": {
@@ -1556,13 +1495,12 @@
       ],
       "description": "A Deactivation resource to retrieve a list of United States phone numbers that have been deactivated by mobile carriers on a specific date.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "redirect_to"
-        ],
+        "defaultOutputProperties": ["redirect_to"],
         "pathType": "instance",
         "className": "deactivations"
       },
       "get": {
+        "tags": ["Deactivations"],
         "description": "Fetch a list of all United States numbers that have been deactivated on a specific date.",
         "parameters": [
           {
@@ -1593,9 +1531,7 @@
           }
         ],
         "operationId": "FetchDeactivation",
-        "x-maturity": [
-          "GA"
-        ]
+        "x-maturity": ["GA"]
       }
     },
     "/v1/Services/PreregisteredUsa2p": {
@@ -1606,14 +1542,12 @@
       ],
       "description": "Resource to associate preregistered campaign with Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "campaign_id",
-          "messaging_service_sid"
-        ],
+        "defaultOutputProperties": ["campaign_id", "messaging_service_sid"],
         "pathType": "list",
         "className": "external_campaign"
       },
       "post": {
+        "tags": ["Preregistered US A2P"],
         "description": "",
         "responses": {
           "201": {
@@ -1633,9 +1567,7 @@
           }
         ],
         "operationId": "CreateExternalCampaign",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1655,10 +1587,7 @@
                     "description": "The SID of the [Messaging Service](https://www.twilio.com/docs/messaging/services/api) that the resource is associated with."
                   }
                 },
-                "required": [
-                  "CampaignId",
-                  "MessagingServiceSid"
-                ]
+                "required": ["CampaignId", "MessagingServiceSid"]
               }
             }
           }
@@ -1673,15 +1602,12 @@
       ],
       "description": "A Messaging Service resource to add, fetch or remove phone numbers from a Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "phone_number",
-          "country_code"
-        ],
+        "defaultOutputProperties": ["sid", "phone_number", "country_code"],
         "pathType": "list",
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Phone Numbers"],
         "description": "",
         "parameters": [
           {
@@ -1715,9 +1641,7 @@
           }
         ],
         "operationId": "CreatePhoneNumber",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1733,15 +1657,14 @@
                     "description": "The SID of the Phone Number being added to the Service."
                   }
                 },
-                "required": [
-                  "PhoneNumberSid"
-                ]
+                "required": ["PhoneNumberSid"]
               }
             }
           }
         }
       },
       "get": {
+        "tags": ["Phone Numbers"],
         "description": "",
         "parameters": [
           {
@@ -1824,9 +1747,7 @@
           }
         ],
         "operationId": "ListPhoneNumber",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{ServiceSid}/PhoneNumbers/{Sid}": {
@@ -1837,15 +1758,12 @@
       ],
       "description": "A Messaging Service resource to add, fetch or remove phone numbers from a Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "phone_number",
-          "country_code"
-        ],
+        "defaultOutputProperties": ["sid", "phone_number", "country_code"],
         "pathType": "instance",
         "parent": "/Services"
       },
       "delete": {
+        "tags": ["Phone Numbers"],
         "description": "",
         "parameters": [
           {
@@ -1881,11 +1799,10 @@
           }
         ],
         "operationId": "DeletePhoneNumber",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "get": {
+        "tags": ["Phone Numbers"],
         "description": "",
         "parameters": [
           {
@@ -1928,9 +1845,7 @@
           }
         ],
         "operationId": "FetchPhoneNumber",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services": {
@@ -1941,14 +1856,11 @@
       ],
       "description": "A Messaging Service resource to create, fetch, update, delete or add/remove senders from Messaging Services.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "friendly_name",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "friendly_name", "date_created"],
         "pathType": "list"
       },
       "post": {
+        "tags": ["Services"],
         "description": "",
         "responses": {
           "201": {
@@ -1968,9 +1880,7 @@
           }
         ],
         "operationId": "CreateService",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -1990,14 +1900,7 @@
                   "InboundMethod": {
                     "type": "string",
                     "format": "http-method",
-                    "enum": [
-                      "HEAD",
-                      "GET",
-                      "POST",
-                      "PATCH",
-                      "PUT",
-                      "DELETE"
-                    ],
+                    "enum": ["HEAD", "GET", "POST", "PATCH", "PUT", "DELETE"],
                     "description": "The HTTP method we should use to call `inbound_request_url`. Can be `GET` or `POST` and the default is `POST`."
                   },
                   "FallbackUrl": {
@@ -2008,14 +1911,7 @@
                   "FallbackMethod": {
                     "type": "string",
                     "format": "http-method",
-                    "enum": [
-                      "HEAD",
-                      "GET",
-                      "POST",
-                      "PATCH",
-                      "PUT",
-                      "DELETE"
-                    ],
+                    "enum": ["HEAD", "GET", "POST", "PATCH", "PUT", "DELETE"],
                     "description": "The HTTP method we should use to call `fallback_url`. Can be: `GET` or `POST`."
                   },
                   "StatusCallback": {
@@ -2065,15 +1961,14 @@
                     "description": "A boolean value that indicates either the webhook url configured on the phone number will be used or `inbound_request_url`/`fallback_url` url will be called when a message is received from the phone number. If this field is enabled then the webhook url defined on the phone number will override the `inbound_request_url`/`fallback_url` defined for the Messaging Service."
                   }
                 },
-                "required": [
-                  "FriendlyName"
-                ]
+                "required": ["FriendlyName"]
               }
             }
           }
         }
       },
       "get": {
+        "tags": ["Services"],
         "description": "",
         "parameters": [
           {
@@ -2144,9 +2039,7 @@
           }
         ],
         "operationId": "ListService",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{Sid}": {
@@ -2157,14 +2050,11 @@
       ],
       "description": "A Messaging Service resource to create, fetch, update, delete or add/remove senders from Messaging Services.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "friendly_name",
-          "date_created"
-        ],
+        "defaultOutputProperties": ["sid", "friendly_name", "date_created"],
         "pathType": "instance"
       },
       "post": {
+        "tags": ["Services"],
         "description": "",
         "parameters": [
           {
@@ -2198,9 +2088,7 @@
           }
         ],
         "operationId": "UpdateService",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2220,14 +2108,7 @@
                   "InboundMethod": {
                     "type": "string",
                     "format": "http-method",
-                    "enum": [
-                      "HEAD",
-                      "GET",
-                      "POST",
-                      "PATCH",
-                      "PUT",
-                      "DELETE"
-                    ],
+                    "enum": ["HEAD", "GET", "POST", "PATCH", "PUT", "DELETE"],
                     "description": "The HTTP method we should use to call `inbound_request_url`. Can be `GET` or `POST` and the default is `POST`."
                   },
                   "FallbackUrl": {
@@ -2238,14 +2119,7 @@
                   "FallbackMethod": {
                     "type": "string",
                     "format": "http-method",
-                    "enum": [
-                      "HEAD",
-                      "GET",
-                      "POST",
-                      "PATCH",
-                      "PUT",
-                      "DELETE"
-                    ],
+                    "enum": ["HEAD", "GET", "POST", "PATCH", "PUT", "DELETE"],
                     "description": "The HTTP method we should use to call `fallback_url`. Can be: `GET` or `POST`."
                   },
                   "StatusCallback": {
@@ -2301,6 +2175,7 @@
         }
       },
       "get": {
+        "tags": ["Services"],
         "description": "",
         "parameters": [
           {
@@ -2334,11 +2209,10 @@
           }
         ],
         "operationId": "FetchService",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "delete": {
+        "tags": ["Services"],
         "description": "",
         "parameters": [
           {
@@ -2365,9 +2239,7 @@
           }
         ],
         "operationId": "DeleteService",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{ServiceSid}/ShortCodes": {
@@ -2378,15 +2250,12 @@
       ],
       "description": "A Messaging Service resource to add, fetch or remove short code numbers from a Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "short_code",
-          "country_code"
-        ],
+        "defaultOutputProperties": ["sid", "short_code", "country_code"],
         "pathType": "list",
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Short Codes"],
         "description": "",
         "parameters": [
           {
@@ -2420,9 +2289,7 @@
           }
         ],
         "operationId": "CreateShortCode",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2438,15 +2305,14 @@
                     "description": "The SID of the ShortCode resource being added to the Service."
                   }
                 },
-                "required": [
-                  "ShortCodeSid"
-                ]
+                "required": ["ShortCodeSid"]
               }
             }
           }
         }
       },
       "get": {
+        "tags": ["Short Codes"],
         "description": "",
         "parameters": [
           {
@@ -2529,9 +2395,7 @@
           }
         ],
         "operationId": "ListShortCode",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{ServiceSid}/ShortCodes/{Sid}": {
@@ -2542,15 +2406,12 @@
       ],
       "description": "A Messaging Service resource to add, fetch or remove short code numbers from a Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "sid",
-          "short_code",
-          "country_code"
-        ],
+        "defaultOutputProperties": ["sid", "short_code", "country_code"],
         "pathType": "instance",
         "parent": "/Services"
       },
       "delete": {
+        "tags": ["Short Codes"],
         "description": "",
         "parameters": [
           {
@@ -2586,11 +2447,10 @@
           }
         ],
         "operationId": "DeleteShortCode",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "get": {
+        "tags": ["Short Codes"],
         "description": "",
         "parameters": [
           {
@@ -2633,9 +2493,7 @@
           }
         ],
         "operationId": "FetchShortCode",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{MessagingServiceSid}/Compliance/Usa2p": {
@@ -2656,6 +2514,7 @@
         "className": "us_app_to_person"
       },
       "post": {
+        "tags": ["US A2P"],
         "description": "",
         "parameters": [
           {
@@ -2689,9 +2548,7 @@
           }
         ],
         "operationId": "CreateUsAppToPerson",
-        "x-maturity": [
-          "Beta"
-        ],
+        "x-maturity": ["Beta"],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2744,6 +2601,7 @@
         }
       },
       "get": {
+        "tags": ["US A2P"],
         "description": "",
         "parameters": [
           {
@@ -2826,9 +2684,7 @@
           }
         ],
         "operationId": "ListUsAppToPerson",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{MessagingServiceSid}/Compliance/Usa2p/{Sid}": {
@@ -2849,6 +2705,7 @@
         "className": "us_app_to_person"
       },
       "delete": {
+        "tags": ["US A2P"],
         "description": "",
         "parameters": [
           {
@@ -2887,11 +2744,10 @@
           }
         ],
         "operationId": "DeleteUsAppToPerson",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       },
       "get": {
+        "tags": ["US A2P"],
         "description": "",
         "parameters": [
           {
@@ -2937,9 +2793,7 @@
           }
         ],
         "operationId": "FetchUsAppToPerson",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/{MessagingServiceSid}/Compliance/Usa2p/Usecases": {
@@ -2950,14 +2804,13 @@
       ],
       "description": "Messaging Service Use Case resource. Fetch possible use cases for service. The Use Cases API returns an empty list if there is an issue with the customer's A2P brand registration. This Brand cannot register any campaign use cases. Customers are requested to contact support with their A2P brand information.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "us_app_to_person_usecases"
-        ],
+        "defaultOutputProperties": ["us_app_to_person_usecases"],
         "pathType": "list",
         "parent": "/Services",
         "className": "us_app_to_person_usecase"
       },
       "get": {
+        "tags": ["Use Cases"],
         "description": "",
         "parameters": [
           {
@@ -3002,9 +2855,7 @@
           }
         ],
         "operationId": "FetchUsAppToPersonUsecase",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     },
     "/v1/Services/Usecases": {
@@ -3015,12 +2866,11 @@
       ],
       "description": "Use Case resource. Fetch possible use cases for a Messaging Service.",
       "x-twilio": {
-        "defaultOutputProperties": [
-          "usecases"
-        ],
+        "defaultOutputProperties": ["usecases"],
         "pathType": "list"
       },
       "get": {
+        "tags": ["Use Cases"],
         "description": "",
         "responses": {
           "200": {
@@ -3040,9 +2890,7 @@
           }
         ],
         "operationId": "FetchUsecase",
-        "x-maturity": [
-          "Beta"
-        ]
+        "x-maturity": ["Beta"]
       }
     }
   },
