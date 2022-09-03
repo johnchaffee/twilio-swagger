@@ -2352,6 +2352,7 @@
         "pathType": "instance"
       },
       "get": {
+        "tags": ["Configuration"],
         "description": "Fetch the global configuration of conversations on your account",
         "responses": {
           "200": {
@@ -2376,6 +2377,7 @@
         ]
       },
       "post": {
+        "tags": ["Configuration"],
         "description": "Update the global configuration of conversations on your account",
         "responses": {
           "200": {
@@ -2452,6 +2454,7 @@
         "className": "address_configuration"
       },
       "get": {
+        "tags": ["Addresses"],
         "description": "Retrieve a list of address configurations for an account",
         "parameters": [
           {
@@ -2535,6 +2538,7 @@
         ]
       },
       "post": {
+        "tags": ["Addresses"],
         "description": "Create a new address configuration",
         "responses": {
           "201": {
@@ -2649,6 +2653,7 @@
         "className": "address_configuration"
       },
       "get": {
+        "tags": ["Addresses"],
         "description": "Fetch an address configuration ",
         "parameters": [
           {
@@ -2684,6 +2689,7 @@
         ]
       },
       "post": {
+        "tags": ["Addresses"],
         "description": "Update an existing address configuration",
         "parameters": [
           {
@@ -2778,6 +2784,7 @@
         }
       },
       "delete": {
+        "tags": ["Addresses"],
         "description": "Remove an existing address configuration",
         "parameters": [
           {
@@ -2824,6 +2831,7 @@
         "parent": "/Configuration"
       },
       "get": {
+        "tags": ["Webhooks"],
         "description": "",
         "responses": {
           "200": {
@@ -2848,6 +2856,7 @@
         ]
       },
       "post": {
+        "tags": ["Webhooks"],
         "description": "",
         "responses": {
           "200": {
@@ -2925,6 +2934,7 @@
         "pathType": "list"
       },
       "post": {
+        "tags": ["Conversations"],
         "description": "Create a new conversation in your account's default service",
         "parameters": [
           {
@@ -3014,6 +3024,7 @@
         }
       },
       "get": {
+        "tags": ["Conversations"],
         "description": "Retrieve a list of conversations in your account's default service",
         "parameters": [
           {
@@ -3106,6 +3117,7 @@
         "pathType": "instance"
       },
       "post": {
+        "tags": ["Conversations"],
         "description": "Update an existing conversation in your account's default service",
         "parameters": [
           {
@@ -3204,6 +3216,7 @@
         }
       },
       "delete": {
+        "tags": ["Conversations"],
         "description": "Remove a conversation from your account's default service",
         "parameters": [
           {
@@ -3241,6 +3254,7 @@
         ]
       },
       "get": {
+        "tags": ["Conversations"],
         "description": "Fetch a conversation from your account's default service",
         "parameters": [
           {
@@ -3294,6 +3308,7 @@
         "parent": "/Conversations"
       },
       "post": {
+        "tags": ["Messages"],
         "description": "Add a new message to the conversation",
         "parameters": [
           {
@@ -3379,6 +3394,7 @@
         }
       },
       "get": {
+        "tags": ["Messages"],
         "description": "Retrieve a list of all messages in the conversation",
         "parameters": [
           {
@@ -3490,6 +3506,7 @@
         "parent": "/Conversations"
       },
       "post": {
+        "tags": ["Messages"],
         "description": "Update an existing message in the conversation",
         "parameters": [
           {
@@ -3580,6 +3597,7 @@
         }
       },
       "delete": {
+        "tags": ["Messages"],
         "description": "Remove a message from the conversation",
         "parameters": [
           {
@@ -3629,6 +3647,7 @@
         ]
       },
       "get": {
+        "tags": ["Messages"],
         "description": "Fetch a message from the conversation",
         "parameters": [
           {
@@ -3695,6 +3714,7 @@
         "className": "delivery_receipt"
       },
       "get": {
+        "tags": ["Receipts"],
         "description": "Fetch the delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -3773,6 +3793,7 @@
         "className": "delivery_receipt"
       },
       "get": {
+        "tags": ["Receipts"],
         "description": "Retrieve a list of all delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -3885,6 +3906,7 @@
         "parent": "/Conversations"
       },
       "post": {
+        "tags": ["Participants"],
         "description": "Add a new participant to the conversation",
         "parameters": [
           {
@@ -3978,6 +4000,7 @@
         }
       },
       "get": {
+        "tags": ["Participants"],
         "description": "Retrieve a list of all participants of the conversation",
         "parameters": [
           {
@@ -4078,6 +4101,7 @@
         "parent": "/Conversations"
       },
       "post": {
+        "tags": ["Participants"],
         "description": "Update an existing participant in the conversation",
         "parameters": [
           {
@@ -4185,6 +4209,7 @@
         }
       },
       "delete": {
+        "tags": ["Participants"],
         "description": "Remove a participant from the conversation",
         "parameters": [
           {
@@ -4231,6 +4256,7 @@
         ]
       },
       "get": {
+        "tags": ["Participants"],
         "description": "Fetch a participant of the conversation",
         "parameters": [
           {
@@ -4291,6 +4317,7 @@
         "parent": "/Conversations"
       },
       "get": {
+        "tags": ["Webhooks"],
         "description": "Retrieve a list of all webhooks scoped to the conversation",
         "parameters": [
           {
@@ -4375,6 +4402,7 @@
         ]
       },
       "post": {
+        "tags": ["Webhooks"],
         "description": "Create a new webhook scoped to the conversation",
         "parameters": [
           {
@@ -4480,6 +4508,7 @@
         "parent": "/Conversations"
       },
       "get": {
+        "tags": ["Webhooks"],
         "description": "Fetch the configuration of a conversation-scoped webhook",
         "parameters": [
           {
@@ -4527,6 +4556,7 @@
         ]
       },
       "post": {
+        "tags": ["Webhooks"],
         "description": "Update an existing conversation-scoped webhook",
         "parameters": [
           {
@@ -4616,6 +4646,7 @@
         }
       },
       "delete": {
+        "tags": ["Webhooks"],
         "description": "Remove an existing webhook scoped to the conversation",
         "parameters": [
           {
@@ -4672,6 +4703,7 @@
         "pathType": "list"
       },
       "post": {
+        "tags": ["Credentials"],
         "description": "Add a new push notification credential to your account",
         "responses": {
           "201": {
@@ -4740,6 +4772,7 @@
         }
       },
       "get": {
+        "tags": ["Credentials"],
         "description": "Retrieve a list of all push notification credentials on your account",
         "parameters": [
           {
@@ -4831,6 +4864,7 @@
         "pathType": "instance"
       },
       "post": {
+        "tags": ["Credentials"],
         "description": "Update an existing push notification credential on your account",
         "parameters": [
           {
@@ -4910,6 +4944,7 @@
         }
       },
       "delete": {
+        "tags": ["Credentials"],
         "description": "Remove a push notification credential from your account",
         "parameters": [
           {
@@ -4941,6 +4976,7 @@
         ]
       },
       "get": {
+        "tags": ["Credentials"],
         "description": "Fetch a push notification credential from your account",
         "parameters": [
           {
@@ -4995,6 +5031,7 @@
         "pathType": "list"
       },
       "get": {
+        "tags": ["Participant Conversations"],
         "description": "Retrieve a list of all Conversations that this Participant belongs to by identity or by address. Only one parameter should be specified.",
         "parameters": [
           {
@@ -5102,6 +5139,7 @@
         "pathType": "list"
       },
       "post": {
+        "tags": ["Roles"],
         "description": "Create a new user role in your account's default service",
         "responses": {
           "201": {
@@ -5159,6 +5197,7 @@
         }
       },
       "get": {
+        "tags": ["Roles"],
         "description": "Retrieve a list of all user roles in your account's default service",
         "parameters": [
           {
@@ -5250,6 +5289,7 @@
         "pathType": "instance"
       },
       "post": {
+        "tags": ["Roles"],
         "description": "Update an existing user role in your account's default service",
         "parameters": [
           {
@@ -5310,6 +5350,7 @@
         }
       },
       "delete": {
+        "tags": ["Roles"],
         "description": "Remove a user role from your account's default service",
         "parameters": [
           {
@@ -5341,6 +5382,7 @@
         ]
       },
       "get": {
+        "tags": ["Roles"],
         "description": "Fetch a user role from your account's default service",
         "parameters": [
           {
@@ -5394,6 +5436,7 @@
         "pathType": "list"
       },
       "post": {
+        "tags": ["Services"],
         "description": "Create a new conversation service on your account",
         "responses": {
           "201": {
@@ -5437,6 +5480,7 @@
         }
       },
       "get": {
+        "tags": ["Services"],
         "description": "Retrieve a list of all conversation services on your account",
         "parameters": [
           {
@@ -5527,6 +5571,7 @@
         "pathType": "instance"
       },
       "delete": {
+        "tags": ["Services"],
         "description": "Remove a conversation service with all its nested resources from your account",
         "parameters": [
           {
@@ -5558,6 +5603,7 @@
         ]
       },
       "get": {
+        "tags": ["Services"],
         "description": "Fetch a conversation service from your account",
         "parameters": [
           {
@@ -5613,6 +5659,7 @@
         "parent": "/Services"
       },
       "delete": {
+        "tags": ["Services Bindings"],
         "description": "Remove a push notification binding from the conversation service",
         "parameters": [
           {
@@ -5656,6 +5703,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Bindings"],
         "description": "Fetch a push notification binding from the conversation service",
         "parameters": [
           {
@@ -5723,6 +5771,7 @@
         "parent": "/Services"
       },
       "get": {
+        "tags": ["Services Bindings"],
         "description": "Retrieve a list of all push notification bindings in the conversation service",
         "parameters": [
           {
@@ -5848,6 +5897,7 @@
         "parent": "/Services"
       },
       "get": {
+        "tags": ["Services Configuration"],
         "description": "Fetch the configuration of a conversation service",
         "parameters": [
           {
@@ -5886,6 +5936,7 @@
         ]
       },
       "post": {
+        "tags": ["Services Configuration"],
         "description": "Update configuration settings of a conversation service",
         "parameters": [
           {
@@ -5979,6 +6030,7 @@
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Services Conversations"],
         "description": "Create a new conversation in your service",
         "parameters": [
           {
@@ -6080,6 +6132,7 @@
         }
       },
       "get": {
+        "tags": ["Services Conversations"],
         "description": "Retrieve a list of conversations in your service",
         "parameters": [
           {
@@ -6185,6 +6238,7 @@
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Services Conversations"],
         "description": "Update an existing conversation in your service",
         "parameters": [
           {
@@ -6295,6 +6349,7 @@
         }
       },
       "delete": {
+        "tags": ["Services Conversations"],
         "description": "Remove a conversation from your service",
         "parameters": [
           {
@@ -6344,6 +6399,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Conversations"],
         "description": "Fetch a conversation from your service",
         "parameters": [
           {
@@ -6409,6 +6465,7 @@
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
+        "tags": ["Services Messages"],
         "description": "Add a new message to the conversation in a specific service",
         "parameters": [
           {
@@ -6506,6 +6563,7 @@
         }
       },
       "get": {
+        "tags": ["Services Messages"],
         "description": "Retrieve a list of all messages in the conversation",
         "parameters": [
           {
@@ -6629,6 +6687,7 @@
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
+        "tags": ["Services Messages"],
         "description": "Update an existing message in the conversation",
         "parameters": [
           {
@@ -6731,6 +6790,7 @@
         }
       },
       "delete": {
+        "tags": ["Services Messages"],
         "description": "Remove a message from the conversation",
         "parameters": [
           {
@@ -6792,6 +6852,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Messages"],
         "description": "Fetch a message from the conversation",
         "parameters": [
           {
@@ -6870,6 +6931,7 @@
         "className": "delivery_receipt"
       },
       "get": {
+        "tags": ["Services Receipts"],
         "description": "Fetch the delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -6960,6 +7022,7 @@
         "className": "delivery_receipt"
       },
       "get": {
+        "tags": ["Services Receipts"],
         "description": "Retrieve a list of all delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -7084,6 +7147,7 @@
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
+        "tags": ["Services Participants"],
         "description": "Add a new participant to the conversation in a specific service",
         "parameters": [
           {
@@ -7189,6 +7253,7 @@
         }
       },
       "get": {
+        "tags": ["Services Participants"],
         "description": "Retrieve a list of all participants of the conversation",
         "parameters": [
           {
@@ -7301,6 +7366,7 @@
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
+        "tags": ["Services Participants"],
         "description": "Update an existing participant in the conversation",
         "parameters": [
           {
@@ -7420,6 +7486,7 @@
         }
       },
       "delete": {
+        "tags": ["Services Participants"],
         "description": "Remove a participant from the conversation",
         "parameters": [
           {
@@ -7478,6 +7545,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Participants"],
         "description": "Fetch a participant of the conversation",
         "parameters": [
           {
@@ -7550,6 +7618,7 @@
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
+        "tags": ["Services Webhooks"],
         "description": "Create a new webhook scoped to the conversation in a specific service",
         "parameters": [
           {
@@ -7651,6 +7720,7 @@
         }
       },
       "get": {
+        "tags": ["Services Webhooks"],
         "description": "Retrieve a list of all webhooks scoped to the conversation",
         "parameters": [
           {
@@ -7763,6 +7833,7 @@
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
+        "tags": ["Services Webhooks"],
         "description": "Update an existing conversation-scoped webhook",
         "parameters": [
           {
@@ -7864,6 +7935,7 @@
         }
       },
       "delete": {
+        "tags": ["Services Webhooks"],
         "description": "Remove an existing webhook scoped to the conversation",
         "parameters": [
           {
@@ -7916,6 +7988,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Webhooks"],
         "description": "Fetch the configuration of a conversation-scoped webhook",
         "parameters": [
           {
@@ -7990,6 +8063,7 @@
         "parent": "/Services/{ChatServiceSid}/Configuration"
       },
       "post": {
+        "tags": ["Services Notifications"],
         "description": "Update push notification service settings",
         "parameters": [
           {
@@ -8092,6 +8166,7 @@
         }
       },
       "get": {
+        "tags": ["Services Notifications"],
         "description": "Fetch push notification service settings",
         "parameters": [
           {
@@ -8147,6 +8222,7 @@
         "parent": "/Services"
       },
       "get": {
+        "tags": ["Services Participant Conversations"],
         "description": "Retrieve a list of all Conversations that this Participant belongs to by identity or by address. Only one parameter should be specified.",
         "parameters": [
           {
@@ -8267,6 +8343,7 @@
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Services Roles"],
         "description": "Create a new user role in your service",
         "parameters": [
           {
@@ -8338,6 +8415,7 @@
         }
       },
       "get": {
+        "tags": ["Services Roles"],
         "description": "Retrieve a list of all user roles in your service",
         "parameters": [
           {
@@ -8442,6 +8520,7 @@
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Services Roles"],
         "description": "Update an existing user role in your service",
         "parameters": [
           {
@@ -8514,6 +8593,7 @@
         }
       },
       "delete": {
+        "tags": ["Services Roles"],
         "description": "Remove a user role from your service",
         "parameters": [
           {
@@ -8557,6 +8637,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Roles"],
         "description": "Fetch a user role from your service",
         "parameters": [
           {
@@ -8623,6 +8704,7 @@
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Services Users"],
         "description": "Add a new conversation user to your service",
         "parameters": [
           {
@@ -8704,6 +8786,7 @@
         }
       },
       "get": {
+        "tags": ["Services Users"],
         "description": "Retrieve a list of all conversation users in your service",
         "parameters": [
           {
@@ -8807,6 +8890,7 @@
         "parent": "/Services"
       },
       "post": {
+        "tags": ["Services Users"],
         "description": "Update an existing conversation user in your service",
         "parameters": [
           {
@@ -8890,6 +8974,7 @@
         }
       },
       "delete": {
+        "tags": ["Services Users"],
         "description": "Remove a conversation user from your service",
         "parameters": [
           {
@@ -8939,6 +9024,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Users"],
         "description": "Fetch a conversation user from your service",
         "parameters": [
           {
@@ -9006,6 +9092,7 @@
         "className": "user_conversation"
       },
       "post": {
+        "tags": ["Services Conversations"],
         "description": "Update a specific User Conversation.",
         "parameters": [
           {
@@ -9089,6 +9176,7 @@
         }
       },
       "delete": {
+        "tags": ["Services Conversations"],
         "description": "Delete a specific User Conversation.",
         "parameters": [
           {
@@ -9138,6 +9226,7 @@
         ]
       },
       "get": {
+        "tags": ["Services Conversations"],
         "description": "Fetch a specific User Conversation.",
         "parameters": [
           {
@@ -9214,6 +9303,7 @@
         "className": "user_conversation"
       },
       "get": {
+        "tags": ["Services Conversations"],
         "description": "Retrieve a list of all User Conversations for the User.",
         "parameters": [
           {
@@ -9325,6 +9415,7 @@
         "parent": "/Services/{ChatServiceSid}/Configuration"
       },
       "post": {
+        "tags": ["Services Webhooks"],
         "description": "Update a specific Webhook.",
         "parameters": [
           {
@@ -9396,6 +9487,7 @@
         }
       },
       "get": {
+        "tags": ["Services Webhooks"],
         "description": "Fetch a specific service webhook configuration.",
         "parameters": [
           {
@@ -9449,6 +9541,7 @@
         "pathType": "list"
       },
       "post": {
+        "tags": ["Users"],
         "description": "Add a new conversation user to your account's default service",
         "parameters": [
           {
@@ -9518,6 +9611,7 @@
         }
       },
       "get": {
+        "tags": ["Users"],
         "description": "Retrieve a list of all conversation users in your account's default service",
         "parameters": [
           {
@@ -9608,6 +9702,7 @@
         "pathType": "instance"
       },
       "post": {
+        "tags": ["Users"],
         "description": "Update an existing conversation user in your account's default service",
         "parameters": [
           {
@@ -9679,6 +9774,7 @@
         }
       },
       "delete": {
+        "tags": ["Users"],
         "description": "Remove a conversation user from your account's default service",
         "parameters": [
           {
@@ -9716,6 +9812,7 @@
         ]
       },
       "get": {
+        "tags": ["Users"],
         "description": "Fetch a conversation user from your account's default service",
         "parameters": [
           {
@@ -9771,6 +9868,7 @@
         "className": "user_conversation"
       },
       "post": {
+        "tags": ["Conversations"],
         "description": "Update a specific User Conversation.",
         "parameters": [
           {
@@ -9842,6 +9940,7 @@
         }
       },
       "delete": {
+        "tags": ["Conversations"],
         "description": "Delete a specific User Conversation.",
         "parameters": [
           {
@@ -9879,6 +9978,7 @@
         ]
       },
       "get": {
+        "tags": ["Conversations"],
         "description": "Fetch a specific User Conversation.",
         "parameters": [
           {
@@ -9943,6 +10043,7 @@
         "className": "user_conversation"
       },
       "get": {
+        "tags": ["Conversations"],
         "description": "Retrieve a list of all User Conversations for the User.",
         "parameters": [
           {
