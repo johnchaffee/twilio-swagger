@@ -25,12 +25,12 @@ Click one of the links below to view the Swagger Doc.
 - [View the Quick Start Video](http://johnchaffee.wiki/twilio-swagger/swagger.mp4)
 - Open one of the Swagger UI Docs above
 - Click the Authorize button on the top right and enter your `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` as the username and password.
-- Click the method you want to run to expand it.
-  - For example, to send an SMS click the [CreateMessage](https://johnchaffee.wiki/twilio-swagger/apis/messaging/#/default/CreateMessage) path at `POST /2010-04-01/Accounts/{AccountSid}/Messages.json`
-- Click the `Try it out` button
+- Click the method you want to run. For example, to send an SMS:
+  - Click the [CreateMessage](https://johnchaffee.wiki/twilio-swagger/apis/messaging/#/Messages/CreateMessage) path.
+  - Click the `Try it out` button
   - Fill in the required parametes (e.g. `AccountSid`, `Body`, `From`, `To`)
   - Uncheck all of the `Send empty value` checkboxes.
-- Click `Execute` to invoke the API. With luck, your SMS message will be sent.
+  - Click `Execute` to invoke the API. With luck, your SMS message will be sent.
 
 ## Errors
 
