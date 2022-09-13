@@ -12,13 +12,13 @@ This project renders Twilio Open API Specs in Swagger UI.
 
 Click one of the links below to view the Swagger Doc.
 
-| Swagger Doc                                                                                  | Description                                         |
-| -------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| [Twilio API](https://johnchaffee.wiki/twilio-swagger/apis/messaging/)                             | Send messages and manage accounts and phone numbers |
-| [Twilio Lookups v2 API](https://johnchaffee.wiki/twilio-swagger/apis/lookups/)                    | Validate Phone Number formats and types             |
-| [Twilio Verify API](https://johnchaffee.wiki/twilio-swagger/apis/verify/)                         | Send and validate one-time-passcodes                |
-| [Twilio Messaging Services API](https://johnchaffee.wiki/twilio-swagger/apis/messaging-services/) | Manage Messaging Services and Number Pools          |
-| [Twilio Conversations API](https://johnchaffee.wiki/twilio-swagger/apis/conversations/)           | Manage 2-way human-to-human conversations           |
+| Swagger Doc                                                                                 | Description                                         |
+| ------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| [Twilio 2010 API](https://johnchaffee.wiki/twilio-swagger/apis/api_v2010/)                  | Send messages and manage accounts and phone numbers |
+| [Twilio Lookups v2 API](https://johnchaffee.wiki/twilio-swagger/apis/lookups_v2/)           | Validate Phone Number formats and types             |
+| [Twilio Verify API](https://johnchaffee.wiki/twilio-swagger/apis/verify_v2/)                | Send and validate one-time-passcodes                |
+| [Twilio Messaging Services API](https://johnchaffee.wiki/twilio-swagger/apis/messaging_v1/) | Manage Messaging Services and Number Pools          |
+| [Twilio Conversations API](https://johnchaffee.wiki/twilio-swagger/apis/conversations_v1/)  | Manage 2-way human-to-human conversations           |
 
 ## Instructions
 
