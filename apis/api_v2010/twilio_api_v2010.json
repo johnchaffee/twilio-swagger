@@ -10228,7 +10228,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Authorized Connected Apps"],
+        "tags": ["AuthorizedConnectApps"],
         "description": "Fetch an instance of an authorized-connect-app",
         "parameters": [
           {
@@ -10293,7 +10293,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Authorized Connected Apps"],
+        "tags": ["AuthorizedConnectApps"],
         "description": "Retrieve a list of authorized-connect-apps belonging to the account used to make the request",
         "parameters": [
           {
@@ -10391,7 +10391,7 @@
         "className": "available_phone_number_country"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["AvailablePhoneNumbers"],
         "description": "",
         "parameters": [
           {
@@ -10489,7 +10489,7 @@
         "className": "available_phone_number_country"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["AvailablePhoneNumbers"],
         "description": "",
         "parameters": [
           {
@@ -10549,7 +10549,7 @@
         "parent": "/Accounts/{AccountSid}/AvailablePhoneNumbers.json"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["Local"],
         "description": "",
         "parameters": [
           {
@@ -10801,7 +10801,7 @@
         "parent": "/Accounts/{AccountSid}/AvailablePhoneNumbers.json"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["MachineToMachine"],
         "description": "",
         "parameters": [
           {
@@ -11053,7 +11053,7 @@
         "parent": "/Accounts/{AccountSid}/AvailablePhoneNumbers.json"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["Mobile"],
         "description": "",
         "parameters": [
           {
@@ -11305,7 +11305,7 @@
         "parent": "/Accounts/{AccountSid}/AvailablePhoneNumbers.json"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["National"],
         "description": "",
         "parameters": [
           {
@@ -11557,7 +11557,7 @@
         "parent": "/Accounts/{AccountSid}/AvailablePhoneNumbers.json"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["SharedCost"],
         "description": "",
         "parameters": [
           {
@@ -11809,7 +11809,7 @@
         "parent": "/Accounts/{AccountSid}/AvailablePhoneNumbers.json"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["TollFree"],
         "description": "",
         "parameters": [
           {
@@ -12061,7 +12061,7 @@
         "parent": "/Accounts/{AccountSid}/AvailablePhoneNumbers.json"
       },
       "get": {
-        "tags": ["Available Phone Numbers"],
+        "tags": ["Voip"],
         "description": "",
         "parameters": [
           {
@@ -12998,7 +12998,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "get": {
-        "tags": ["Calls"],
+        "tags": ["Events"],
         "description": "Retrieve a list of all events for a call.",
         "parameters": [
           {
@@ -13107,7 +13107,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "get": {
-        "tags": ["Calls"],
+        "tags": ["Feedback"],
         "description": "Fetch a Feedback resource from a call",
         "parameters": [
           {
@@ -13156,7 +13156,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Feedback"],
         "description": "Update a Feedback resource for a call",
         "parameters": [
           {
@@ -13244,7 +13244,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["FeedbackSummary"],
         "description": "Create a FeedbackSummary resource for a call",
         "parameters": [
           {
@@ -13337,7 +13337,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "get": {
-        "tags": ["Calls"],
+        "tags": ["FeedbackSummary"],
         "description": "Fetch a FeedbackSummary resource from a call",
         "parameters": [
           {
@@ -13386,7 +13386,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["Calls"],
+        "tags": ["FeedbackSummary"],
         "description": "Delete a FeedbackSummary resource from a call",
         "parameters": [
           {
@@ -13446,7 +13446,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "get": {
-        "tags": ["Calls"],
+        "tags": ["Notifications"],
         "description": "",
         "parameters": [
           {
@@ -13525,7 +13525,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "get": {
-        "tags": ["Calls"],
+        "tags": ["Notifications"],
         "description": "",
         "parameters": [
           {
@@ -13675,7 +13675,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Recordings"],
         "description": "Create a recording for the call",
         "parameters": [
           {
@@ -13766,7 +13766,7 @@
         }
       },
       "get": {
-        "tags": ["Calls"],
+        "tags": ["Recordings"],
         "description": "Retrieve a list of recordings belonging to the call used to make the request",
         "parameters": [
           {
@@ -13908,7 +13908,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Recordings"],
         "description": "Changes the status of the recording to paused, stopped, or in-progress. Note: Pass `Twilio.CURRENT` instead of recording sid to reference current active recording.",
         "parameters": [
           {
@@ -13988,7 +13988,7 @@
         }
       },
       "get": {
-        "tags": ["Calls"],
+        "tags": ["Recordings"],
         "description": "Fetch an instance of a recording for a call",
         "parameters": [
           {
@@ -14049,7 +14049,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["Calls"],
+        "tags": ["Recordings"],
         "description": "Delete a recording from your account",
         "parameters": [
           {
@@ -14426,7 +14426,7 @@
         "parent": "/Accounts/{AccountSid}/Conferences.json"
       },
       "post": {
-        "tags": ["Conferences"],
+        "tags": ["Recordings"],
         "description": "Changes the status of the recording to paused, stopped, or in-progress. Note: To use `Twilio.CURRENT`, pass it as recording sid.",
         "parameters": [
           {
@@ -14506,7 +14506,7 @@
         }
       },
       "get": {
-        "tags": ["Conferences"],
+        "tags": ["Recordings"],
         "description": "Fetch an instance of a recording for a call",
         "parameters": [
           {
@@ -14567,7 +14567,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["Conferences"],
+        "tags": ["Recordings"],
         "description": "Delete a recording from your account",
         "parameters": [
           {
@@ -14640,7 +14640,7 @@
         "parent": "/Accounts/{AccountSid}/Conferences.json"
       },
       "get": {
-        "tags": ["Conferences"],
+        "tags": ["Recordings"],
         "description": "Retrieve a list of recordings belonging to the call used to make the request",
         "parameters": [
           {
@@ -14776,7 +14776,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Connect Apps"],
+        "tags": ["ConnectApps"],
         "description": "Fetch an instance of a connect-app",
         "parameters": [
           {
@@ -14825,7 +14825,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Connect Apps"],
+        "tags": ["ConnectApps"],
         "description": "Update a connect-app with the specified parameters",
         "parameters": [
           {
@@ -14927,7 +14927,7 @@
         }
       },
       "delete": {
-        "tags": ["Connect Apps"],
+        "tags": ["ConnectApps"],
         "description": "Delete an instance of a connect-app",
         "parameters": [
           {
@@ -14982,7 +14982,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Connect Apps"],
+        "tags": ["ConnectApps"],
         "description": "Retrieve a list of connect-apps belonging to the account used to make the request",
         "parameters": [
           {
@@ -15079,7 +15079,7 @@
         "parent": "/Accounts/{AccountSid}/Addresses.json"
       },
       "get": {
-        "tags": ["Addresses"],
+        "tags": ["DependentPhoneNumbers"],
         "description": "",
         "parameters": [
           {
@@ -15188,7 +15188,7 @@
         "parent": "/Accounts.json"
       },
       "post": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["IncomingPhoneNumbers"],
         "description": "Update an incoming-phone-number instance.",
         "parameters": [
           {
@@ -15382,7 +15382,7 @@
         }
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["IncomingPhoneNumbers"],
         "description": "Fetch an incoming-phone-number belonging to the account used to make the request.",
         "parameters": [
           {
@@ -15431,7 +15431,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["IncomingPhoneNumbers"],
         "description": "Delete a phone-numbers belonging to the account used to make the request.",
         "parameters": [
           {
@@ -15486,7 +15486,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["IncomingPhoneNumbers"],
         "description": "Retrieve a list of incoming-phone-numbers belonging to the account used to make the request.",
         "parameters": [
           {
@@ -15603,7 +15603,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["IncomingPhoneNumbers"],
         "description": "Purchase a phone-number for the account.",
         "parameters": [
           {
@@ -15808,7 +15808,7 @@
         "parent": "/Accounts/{AccountSid}/IncomingPhoneNumbers.json"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["AssignedAddOns"],
         "description": "Fetch an instance of an Add-on installation currently assigned to this Number.",
         "parameters": [
           {
@@ -15869,7 +15869,7 @@
         "x-maturity": ["Beta"]
       },
       "delete": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["AssignedAddOns"],
         "description": "Remove the assignment of an Add-on installation from the Number specified.",
         "parameters": [
           {
@@ -15941,7 +15941,7 @@
         "parent": "/Accounts/{AccountSid}/IncomingPhoneNumbers.json"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["AssignedAddOns"],
         "description": "Retrieve a list of Add-on installations currently assigned to this Number.",
         "parameters": [
           {
@@ -16037,7 +16037,7 @@
         "x-maturity": ["Beta"]
       },
       "post": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["AssignedAddOns"],
         "description": "Assign an Add-on installation to the Number specified.",
         "parameters": [
           {
@@ -16125,7 +16125,7 @@
         "className": "assigned_add_on_extension"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["Extensions"],
         "description": "Fetch an instance of an Extension for the Assigned Add-on.",
         "parameters": [
           {
@@ -16217,7 +16217,7 @@
         "className": "assigned_add_on_extension"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["Extensions"],
         "description": "Retrieve a list of Extensions for the Assigned Add-on.",
         "parameters": [
           {
@@ -16338,7 +16338,7 @@
         "parent": "/Accounts/{AccountSid}/IncomingPhoneNumbers.json"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["Local"],
         "description": "",
         "parameters": [
           {
@@ -16455,7 +16455,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["Local"],
         "description": "",
         "parameters": [
           {
@@ -16649,7 +16649,7 @@
         "parent": "/Accounts/{AccountSid}/IncomingPhoneNumbers.json"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["Mobile"],
         "description": "",
         "parameters": [
           {
@@ -16766,7 +16766,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["Mobile"],
         "description": "",
         "parameters": [
           {
@@ -16960,7 +16960,7 @@
         "parent": "/Accounts/{AccountSid}/IncomingPhoneNumbers.json"
       },
       "get": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["TollFree"],
         "description": "",
         "parameters": [
           {
@@ -17077,7 +17077,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Incoming Phone Numbers"],
+        "tags": ["TollFree"],
         "description": "",
         "parameters": [
           {
@@ -17593,7 +17593,7 @@
         "parent": "/Accounts/{AccountSid}/Messages.json"
       },
       "delete": {
-        "tags": ["Messages"],
+        "tags": ["Media"],
         "description": "Delete media from your account. Once delete, you will no longer be billed",
         "parameters": [
           {
@@ -17647,7 +17647,7 @@
         "x-maturity": ["GA"]
       },
       "get": {
-        "tags": ["Messages"],
+        "tags": ["Media"],
         "description": "Fetch a single media instance belonging to the account used to make the request",
         "parameters": [
           {
@@ -17721,7 +17721,7 @@
         "parent": "/Accounts/{AccountSid}/Messages.json"
       },
       "get": {
-        "tags": ["Messages"],
+        "tags": ["Media"],
         "description": "Retrieve a list of Media resources belonging to the account used to make the request",
         "parameters": [
           {
@@ -17862,7 +17862,7 @@
         "parent": "/Accounts/{AccountSid}/Queues.json"
       },
       "get": {
-        "tags": ["Queues"],
+        "tags": ["Members"],
         "description": "Fetch a specific member from the queue",
         "parameters": [
           {
@@ -17920,7 +17920,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Queues"],
+        "tags": ["Members"],
         "description": "Dequeue a member from a queue and have the member's call begin executing the TwiML document at that URL",
         "parameters": [
           {
@@ -18020,7 +18020,7 @@
         "parent": "/Accounts/{AccountSid}/Queues.json"
       },
       "get": {
-        "tags": ["Queues"],
+        "tags": ["Members"],
         "description": "Retrieve the members of the queue",
         "parameters": [
           {
@@ -18611,7 +18611,7 @@
         "parent": "/Accounts/{AccountSid}/Messages.json"
       },
       "post": {
-        "tags": ["Messages"],
+        "tags": ["Feedback"],
         "description": "",
         "parameters": [
           {
@@ -18690,7 +18690,7 @@
         "parent": "/Accounts.json"
       },
       "post": {
-        "tags": ["Signing Keys"],
+        "tags": ["SigningKeys"],
         "description": "Create a new Signing Key for the account making the request.",
         "parameters": [
           {
@@ -18746,7 +18746,7 @@
         }
       },
       "get": {
-        "tags": ["Signing Keys"],
+        "tags": ["SigningKeys"],
         "description": "",
         "parameters": [
           {
@@ -19047,7 +19047,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Outgoing Caller IDs"],
+        "tags": ["OutgoingCallerIds"],
         "description": "Fetch an outgoing-caller-id belonging to the account used to make the request",
         "parameters": [
           {
@@ -19096,7 +19096,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Outgoing Caller IDs"],
+        "tags": ["OutgoingCallerIds"],
         "description": "Updates the caller-id",
         "parameters": [
           {
@@ -19161,7 +19161,7 @@
         }
       },
       "delete": {
-        "tags": ["Outgoing Caller IDs"],
+        "tags": ["OutgoingCallerIds"],
         "description": "Delete the caller-id specified from the account",
         "parameters": [
           {
@@ -19216,7 +19216,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Outgoing Caller IDs"],
+        "tags": ["OutgoingCallerIds"],
         "description": "Retrieve a list of outgoing-caller-ids belonging to the account used to make the request",
         "parameters": [
           {
@@ -19317,7 +19317,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Outgoing Caller IDs"],
+        "tags": ["OutgoingCallerIds"],
         "description": "",
         "parameters": [
           {
@@ -19417,7 +19417,7 @@
         "parent": "/Accounts/{AccountSid}/Conferences.json"
       },
       "get": {
-        "tags": ["Conferences"],
+        "tags": ["Participants"],
         "description": "Fetch an instance of a participant",
         "parameters": [
           {
@@ -19475,7 +19475,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Conferences"],
+        "tags": ["Participants"],
         "description": "Update the properties of the participant",
         "parameters": [
           {
@@ -19605,7 +19605,7 @@
         }
       },
       "delete": {
-        "tags": ["Conferences"],
+        "tags": ["Participants"],
         "description": "Kick a participant from a given conference",
         "parameters": [
           {
@@ -19675,7 +19675,7 @@
         "parent": "/Accounts/{AccountSid}/Conferences.json"
       },
       "post": {
-        "tags": ["Conferences"],
+        "tags": ["Participants"],
         "description": "",
         "parameters": [
           {
@@ -19925,7 +19925,7 @@
         }
       },
       "get": {
-        "tags": ["Conferences"],
+        "tags": ["Participants"],
         "description": "Retrieve a list of participants belonging to the account used to make the request",
         "parameters": [
           {
@@ -20058,7 +20058,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Payments"],
         "description": "create an instance of payments. This will start a new payments session",
         "parameters": [
           {
@@ -20200,7 +20200,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Payments"],
         "description": "update an instance of payments with different phases of payment flows.",
         "parameters": [
           {
@@ -20927,7 +20927,7 @@
         "parent": "/Accounts/{AccountSid}/Recordings.json"
       },
       "get": {
-        "tags": ["Recordings"],
+        "tags": ["AddOnResults"],
         "description": "Fetch an instance of an AddOnResult",
         "parameters": [
           {
@@ -20988,7 +20988,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["Recordings"],
+        "tags": ["AddOnResults"],
         "description": "Delete a result and purge all associated Payloads",
         "parameters": [
           {
@@ -21060,7 +21060,7 @@
         "parent": "/Accounts/{AccountSid}/Recordings.json"
       },
       "get": {
-        "tags": ["Recordings"],
+        "tags": ["AddOnResults"],
         "description": "Retrieve a list of results belonging to the recording",
         "parameters": [
           {
@@ -21169,7 +21169,7 @@
         "parent": "/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults.json"
       },
       "get": {
-        "tags": ["Recordings"],
+        "tags": ["Payloads"],
         "description": "Fetch an instance of a result payload",
         "parameters": [
           {
@@ -21242,7 +21242,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["Recordings"],
+        "tags": ["Payloads"],
         "description": "Delete a payload from the result along with all associated Data",
         "parameters": [
           {
@@ -21321,7 +21321,7 @@
         "parent": "/Accounts/{AccountSid}/Recordings/{ReferenceSid}/AddOnResults.json"
       },
       "get": {
-        "tags": ["Recordings"],
+        "tags": ["Payloads"],
         "description": "Retrieve a list of payloads belonging to the AddOnResult",
         "parameters": [
           {
@@ -21442,7 +21442,7 @@
         "parent": "/Accounts/{AccountSid}/Recordings.json"
       },
       "get": {
-        "tags": ["Recordings"],
+        "tags": ["Transcriptions"],
         "description": "",
         "parameters": [
           {
@@ -21503,7 +21503,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["Recordings"],
+        "tags": ["Transcriptions"],
         "description": "",
         "parameters": [
           {
@@ -21570,7 +21570,7 @@
         "parent": "/Accounts/{AccountSid}/Recordings.json"
       },
       "get": {
-        "tags": ["Recordings"],
+        "tags": ["Transcriptions"],
         "description": "",
         "parameters": [
           {
@@ -21679,7 +21679,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Short Codes"],
+        "tags": ["ShortCodes"],
         "description": "Fetch an instance of a short code",
         "parameters": [
           {
@@ -21728,7 +21728,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Short Codes"],
+        "tags": ["ShortCodes"],
         "description": "Update a short code with the following parameters",
         "parameters": [
           {
@@ -21832,7 +21832,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Short Codes"],
+        "tags": ["ShortCodes"],
         "description": "Retrieve a list of short-codes belonging to the account used to make the request",
         "parameters": [
           {
@@ -21945,7 +21945,7 @@
         "parent": "/Accounts.json"
       },
       "get": {
-        "tags": ["Signing Keys"],
+        "tags": ["SigningKeys"],
         "description": "",
         "parameters": [
           {
@@ -21994,7 +21994,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Signing Keys"],
+        "tags": ["SigningKeys"],
         "description": "",
         "parameters": [
           {
@@ -22059,7 +22059,7 @@
         }
       },
       "delete": {
-        "tags": ["Signing Keys"],
+        "tags": ["SigningKeys"],
         "description": "",
         "parameters": [
           {
@@ -22156,7 +22156,7 @@
         "className": "auth_calls_credential_list_mapping"
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Create a new credential list mapping resource",
         "parameters": [
           {
@@ -22225,7 +22225,7 @@
         }
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Retrieve a list of credential list mappings belonging to the domain used in the request",
         "parameters": [
           {
@@ -22335,7 +22335,7 @@
         "className": "auth_calls_credential_list_mapping"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Fetch a specific instance of a credential list mapping",
         "parameters": [
           {
@@ -22396,7 +22396,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Delete a credential list mapping from the requested domain",
         "parameters": [
           {
@@ -22464,7 +22464,7 @@
         "className": "auth_calls_ip_access_control_list_mapping"
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Create a new IP Access Control List mapping",
         "parameters": [
           {
@@ -22533,7 +22533,7 @@
         }
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Retrieve a list of IP Access Control List mappings belonging to the domain used in the request",
         "parameters": [
           {
@@ -22643,7 +22643,7 @@
         "className": "auth_calls_ip_access_control_list_mapping"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Fetch a specific instance of an IP Access Control List mapping",
         "parameters": [
           {
@@ -22704,7 +22704,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Delete an IP Access Control List mapping from the requested domain",
         "parameters": [
           {
@@ -22786,7 +22786,7 @@
         "className": "auth_registrations_credential_list_mapping"
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Create a new credential list mapping resource",
         "parameters": [
           {
@@ -22855,7 +22855,7 @@
         }
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Retrieve a list of credential list mappings belonging to the domain used in the request",
         "parameters": [
           {
@@ -22965,7 +22965,7 @@
         "className": "auth_registrations_credential_list_mapping"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Fetch a specific instance of a credential list mapping",
         "parameters": [
           {
@@ -23026,7 +23026,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Delete a credential list mapping from the requested domain",
         "parameters": [
           {
@@ -23093,7 +23093,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/CredentialLists.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["Credentials"],
         "description": "Retrieve a list of credentials.",
         "parameters": [
           {
@@ -23189,7 +23189,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["Credentials"],
         "description": "Create a new credential resource.",
         "parameters": [
           {
@@ -23272,7 +23272,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/CredentialLists.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["Credentials"],
         "description": "Fetch a single credential.",
         "parameters": [
           {
@@ -23333,7 +23333,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["Credentials"],
         "description": "Update a credential resource.",
         "parameters": [
           {
@@ -23410,7 +23410,7 @@
         }
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["Credentials"],
         "description": "Delete a credential resource.",
         "parameters": [
           {
@@ -23477,7 +23477,7 @@
         "parent": "/Accounts/{AccountSid}/SIP.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialLists"],
         "description": "Get All Credential Lists",
         "parameters": [
           {
@@ -23561,7 +23561,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["CredentialLists"],
         "description": "Create a Credential List",
         "parameters": [
           {
@@ -23628,7 +23628,7 @@
         "parent": "/Accounts/{AccountSid}/SIP.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialLists"],
         "description": "Get a Credential List",
         "parameters": [
           {
@@ -23677,7 +23677,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["CredentialLists"],
         "description": "Update a Credential List",
         "parameters": [
           {
@@ -23743,7 +23743,7 @@
         }
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["CredentialLists"],
         "description": "Delete a Credential List",
         "parameters": [
           {
@@ -23798,7 +23798,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/Domains.json"
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Create a CredentialListMapping resource for an account.",
         "parameters": [
           {
@@ -23867,7 +23867,7 @@
         }
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Read multiple CredentialListMapping resources from an account.",
         "parameters": [
           {
@@ -23976,7 +23976,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/Domains.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Fetch a single CredentialListMapping resource from an account.",
         "parameters": [
           {
@@ -24037,7 +24037,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["CredentialListMappings"],
         "description": "Delete a CredentialListMapping resource from an account.",
         "parameters": [
           {
@@ -24104,7 +24104,7 @@
         "parent": "/Accounts/{AccountSid}/SIP.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["Domains"],
         "description": "Retrieve a list of domains belonging to the account used to make the request",
         "parameters": [
           {
@@ -24188,7 +24188,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["Domains"],
         "description": "Create a new Domain",
         "parameters": [
           {
@@ -24318,7 +24318,7 @@
         "parent": "/Accounts/{AccountSid}/SIP.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["Domains"],
         "description": "Fetch an instance of a Domain",
         "parameters": [
           {
@@ -24367,7 +24367,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["Domains"],
         "description": "Update the attributes of a domain",
         "parameters": [
           {
@@ -24495,7 +24495,7 @@
         }
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["Domains"],
         "description": "Delete an instance of a Domain",
         "parameters": [
           {
@@ -24550,7 +24550,7 @@
         "parent": "/Accounts/{AccountSid}/SIP.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlLists"],
         "description": "Retrieve a list of IpAccessControlLists that belong to the account used to make the request",
         "parameters": [
           {
@@ -24634,7 +24634,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlLists"],
         "description": "Create a new IpAccessControlList resource",
         "parameters": [
           {
@@ -24701,7 +24701,7 @@
         "parent": "/Accounts/{AccountSid}/SIP.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlLists"],
         "description": "Fetch a specific instance of an IpAccessControlList",
         "parameters": [
           {
@@ -24750,7 +24750,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlLists"],
         "description": "Rename an IpAccessControlList",
         "parameters": [
           {
@@ -24816,7 +24816,7 @@
         }
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlLists"],
         "description": "Delete an IpAccessControlList from the requested account",
         "parameters": [
           {
@@ -24871,7 +24871,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/Domains.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Fetch an IpAccessControlListMapping resource.",
         "parameters": [
           {
@@ -24932,7 +24932,7 @@
         "x-maturity": ["GA"]
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Delete an IpAccessControlListMapping resource.",
         "parameters": [
           {
@@ -24999,7 +24999,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/Domains.json"
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Create a new IpAccessControlListMapping resource.",
         "parameters": [
           {
@@ -25068,7 +25068,7 @@
         }
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAccessControlListMappings"],
         "description": "Retrieve a list of IpAccessControlListMapping resources.",
         "parameters": [
           {
@@ -25177,7 +25177,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/IpAccessControlLists.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAddresses"],
         "description": "Read multiple IpAddress resources.",
         "parameters": [
           {
@@ -25273,7 +25273,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["IpAddresses"],
         "description": "Create a new IpAddress resource.",
         "parameters": [
           {
@@ -25360,7 +25360,7 @@
         "parent": "/Accounts/{AccountSid}/SIP/IpAccessControlLists.json"
       },
       "get": {
-        "tags": ["SIP"],
+        "tags": ["IpAddresses"],
         "description": "Read one IpAddress resource.",
         "parameters": [
           {
@@ -25421,7 +25421,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["SIP"],
+        "tags": ["IpAddresses"],
         "description": "Update an IpAddress resource.",
         "parameters": [
           {
@@ -25506,7 +25506,7 @@
         }
       },
       "delete": {
-        "tags": ["SIP"],
+        "tags": ["IpAddresses"],
         "description": "Delete an IpAddress resource.",
         "parameters": [
           {
@@ -25573,7 +25573,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Siprec"],
         "description": "Create a Siprec",
         "parameters": [
           {
@@ -26463,7 +26463,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Siprec"],
         "description": "Stop a Siprec using either the SID of the Siprec resource or the `name` used when creating the resource",
         "parameters": [
           {
@@ -26552,7 +26552,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Streams"],
         "description": "Create a Stream",
         "parameters": [
           {
@@ -27444,7 +27444,7 @@
         "parent": "/Accounts/{AccountSid}/Calls.json"
       },
       "post": {
-        "tags": ["Calls"],
+        "tags": ["Streams"],
         "description": "Stop a Stream using either the SID of the Stream resource or the `name` used when creating the resource",
         "parameters": [
           {
@@ -27819,7 +27819,7 @@
         "parent": "/Accounts/{AccountSid}/Usage.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Records"],
         "description": "Retrieve a list of usage-records belonging to the account used to make the request",
         "parameters": [
           {
@@ -27957,7 +27957,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["AllTime"],
         "description": "",
         "parameters": [
           {
@@ -28095,7 +28095,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Daily"],
         "description": "",
         "parameters": [
           {
@@ -28233,7 +28233,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["LastMonth"],
         "description": "",
         "parameters": [
           {
@@ -28371,7 +28371,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Monthly"],
         "description": "",
         "parameters": [
           {
@@ -28509,7 +28509,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["ThisMonth"],
         "description": "",
         "parameters": [
           {
@@ -28647,7 +28647,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Today"],
         "description": "",
         "parameters": [
           {
@@ -28785,7 +28785,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Yearly"],
         "description": "",
         "parameters": [
           {
@@ -28923,7 +28923,7 @@
         "parent": "/Accounts/{AccountSid}/Usage/Records.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Yesterday"],
         "description": "",
         "parameters": [
           {
@@ -29060,7 +29060,7 @@
         "parent": "/Accounts/{AccountSid}/Usage.json"
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Triggers"],
         "description": "Fetch and instance of a usage-trigger",
         "parameters": [
           {
@@ -29109,7 +29109,7 @@
         "x-maturity": ["GA"]
       },
       "post": {
-        "tags": ["Usage"],
+        "tags": ["Triggers"],
         "description": "Update an instance of a usage trigger",
         "parameters": [
           {
@@ -29185,7 +29185,7 @@
         }
       },
       "delete": {
-        "tags": ["Usage"],
+        "tags": ["Triggers"],
         "description": "",
         "parameters": [
           {
@@ -29245,7 +29245,7 @@
         "parent": "/Accounts/{AccountSid}/Usage.json"
       },
       "post": {
-        "tags": ["Usage"],
+        "tags": ["Triggers"],
         "description": "Create a new UsageTrigger",
         "parameters": [
           {
@@ -29329,7 +29329,7 @@
         }
       },
       "get": {
-        "tags": ["Usage"],
+        "tags": ["Triggers"],
         "description": "Retrieve a list of usage-triggers belonging to the account used to make the request",
         "parameters": [
           {
