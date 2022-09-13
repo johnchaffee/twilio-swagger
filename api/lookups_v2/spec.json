@@ -69,7 +69,11 @@
       },
       "phone_number_enum_type": {
         "type": "string",
-        "enum": ["landline", "mobile", "voip"]
+        "enum": [
+          "landline",
+          "mobile",
+          "voip"
+        ]
       },
       "phone_number_enum_validation_error": {
         "type": "string",
@@ -126,7 +130,6 @@
         "pathType": "instance"
       },
       "get": {
-        "tags": ["Phone Numbers"],
         "description": "",
         "parameters": [
           {
@@ -173,7 +176,12 @@
           }
         ],
         "operationId": "FetchPhoneNumber",
-        "x-maturity": ["Beta"]
+        "x-maturity": [
+          "Beta"
+        ],
+        "tags": [
+          "PhoneNumbers"
+        ]
       }
     }
   },

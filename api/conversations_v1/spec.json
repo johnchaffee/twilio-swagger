@@ -112,15 +112,27 @@
       },
       "configuration_address_enum_type": {
         "type": "string",
-        "enum": ["sms", "whatsapp", "messenger", "gbm"]
+        "enum": [
+          "sms",
+          "whatsapp",
+          "messenger",
+          "gbm"
+        ]
       },
       "configuration_address_enum_auto_creation_type": {
         "type": "string",
-        "enum": ["webhook", "studio", "default"]
+        "enum": [
+          "webhook",
+          "studio",
+          "default"
+        ]
       },
       "configuration_address_enum_method": {
         "type": "string",
-        "enum": ["GET", "POST"]
+        "enum": [
+          "GET",
+          "POST"
+        ]
       },
       "conversations.v1.configuration.configuration_webhook": {
         "type": "object",
@@ -173,11 +185,17 @@
       },
       "configuration_webhook_enum_target": {
         "type": "string",
-        "enum": ["webhook", "flex"]
+        "enum": [
+          "webhook",
+          "flex"
+        ]
       },
       "configuration_webhook_enum_method": {
         "type": "string",
-        "enum": ["GET", "POST"]
+        "enum": [
+          "GET",
+          "POST"
+        ]
       },
       "conversations.v1.conversation": {
         "type": "object",
@@ -270,11 +288,18 @@
       },
       "conversation_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "conversation_enum_state": {
         "type": "string",
-        "enum": ["inactive", "active", "closed"]
+        "enum": [
+          "inactive",
+          "active",
+          "closed"
+        ]
       },
       "conversations.v1.conversation.conversation_message": {
         "type": "object",
@@ -369,11 +394,17 @@
       },
       "conversation_message_enum_order_type": {
         "type": "string",
-        "enum": ["asc", "desc"]
+        "enum": [
+          "asc",
+          "desc"
+        ]
       },
       "conversation_message_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "conversations.v1.conversation.conversation_message.conversation_message_receipt": {
         "type": "object",
@@ -459,7 +490,13 @@
       },
       "conversation_message_receipt_enum_delivery_status": {
         "type": "string",
-        "enum": ["read", "failed", "delivered", "undelivered", "sent"]
+        "enum": [
+          "read",
+          "failed",
+          "delivered",
+          "undelivered",
+          "sent"
+        ]
       },
       "conversations.v1.conversation.conversation_participant": {
         "type": "object",
@@ -531,18 +568,21 @@
           "last_read_message_index": {
             "type": "integer",
             "nullable": true,
-            "description": "Index of last \u201cread\u201d message in the Conversation for the Participant."
+            "description": "Index of last “read” message in the Conversation for the Participant."
           },
           "last_read_timestamp": {
             "type": "string",
             "nullable": true,
-            "description": "Timestamp of last \u201cread\u201d message in the Conversation for the Participant."
+            "description": "Timestamp of last “read” message in the Conversation for the Participant."
           }
         }
       },
       "conversation_participant_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "conversations.v1.conversation.conversation_scoped_webhook": {
         "type": "object",
@@ -602,11 +642,18 @@
       },
       "conversation_scoped_webhook_enum_target": {
         "type": "string",
-        "enum": ["webhook", "trigger", "studio"]
+        "enum": [
+          "webhook",
+          "trigger",
+          "studio"
+        ]
       },
       "conversation_scoped_webhook_enum_method": {
         "type": "string",
-        "enum": ["GET", "POST"]
+        "enum": [
+          "GET",
+          "POST"
+        ]
       },
       "conversations.v1.credential": {
         "type": "object",
@@ -665,7 +712,11 @@
       },
       "credential_enum_push_type": {
         "type": "string",
-        "enum": ["apn", "gcm", "fcm"]
+        "enum": [
+          "apn",
+          "gcm",
+          "fcm"
+        ]
       },
       "conversations.v1.participant_conversation": {
         "type": "object",
@@ -771,7 +822,11 @@
       },
       "participant_conversation_enum_state": {
         "type": "string",
-        "enum": ["inactive", "active", "closed"]
+        "enum": [
+          "inactive",
+          "active",
+          "closed"
+        ]
       },
       "conversations.v1.role": {
         "type": "object",
@@ -841,7 +896,10 @@
       },
       "role_enum_role_type": {
         "type": "string",
-        "enum": ["conversation", "service"]
+        "enum": [
+          "conversation",
+          "service"
+        ]
       },
       "conversations.v1.service": {
         "type": "object",
@@ -974,7 +1032,11 @@
       },
       "service_binding_enum_binding_type": {
         "type": "string",
-        "enum": ["apn", "gcm", "fcm"]
+        "enum": [
+          "apn",
+          "gcm",
+          "fcm"
+        ]
       },
       "conversations.v1.service.service_configuration": {
         "type": "object",
@@ -1121,11 +1183,18 @@
       },
       "service_conversation_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "service_conversation_enum_state": {
         "type": "string",
-        "enum": ["inactive", "active", "closed"]
+        "enum": [
+          "inactive",
+          "active",
+          "closed"
+        ]
       },
       "conversations.v1.service.service_conversation.service_conversation_message": {
         "type": "object",
@@ -1228,11 +1297,17 @@
       },
       "service_conversation_message_enum_order_type": {
         "type": "string",
-        "enum": ["asc", "desc"]
+        "enum": [
+          "asc",
+          "desc"
+        ]
       },
       "service_conversation_message_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "conversations.v1.service.service_conversation.service_conversation_message.service_conversation_message_receipt": {
         "type": "object",
@@ -1326,7 +1401,13 @@
       },
       "service_conversation_message_receipt_enum_delivery_status": {
         "type": "string",
-        "enum": ["read", "failed", "delivered", "undelivered", "sent"]
+        "enum": [
+          "read",
+          "failed",
+          "delivered",
+          "undelivered",
+          "sent"
+        ]
       },
       "conversations.v1.service.service_conversation.service_conversation_participant": {
         "type": "object",
@@ -1406,18 +1487,21 @@
           "last_read_message_index": {
             "type": "integer",
             "nullable": true,
-            "description": "Index of last \u201cread\u201d message in the Conversation for the Participant."
+            "description": "Index of last “read” message in the Conversation for the Participant."
           },
           "last_read_timestamp": {
             "type": "string",
             "nullable": true,
-            "description": "Timestamp of last \u201cread\u201d message in the Conversation for the Participant."
+            "description": "Timestamp of last “read” message in the Conversation for the Participant."
           }
         }
       },
       "service_conversation_participant_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "conversations.v1.service.service_conversation.service_conversation_scoped_webhook": {
         "type": "object",
@@ -1485,11 +1569,18 @@
       },
       "service_conversation_scoped_webhook_enum_target": {
         "type": "string",
-        "enum": ["webhook", "trigger", "studio"]
+        "enum": [
+          "webhook",
+          "trigger",
+          "studio"
+        ]
       },
       "service_conversation_scoped_webhook_enum_method": {
         "type": "string",
-        "enum": ["GET", "POST"]
+        "enum": [
+          "GET",
+          "POST"
+        ]
       },
       "conversations.v1.service.service_configuration.service_notification": {
         "type": "object",
@@ -1639,7 +1730,11 @@
       },
       "service_participant_conversation_enum_state": {
         "type": "string",
-        "enum": ["inactive", "active", "closed"]
+        "enum": [
+          "inactive",
+          "active",
+          "closed"
+        ]
       },
       "conversations.v1.service.service_role": {
         "type": "object",
@@ -1709,7 +1804,10 @@
       },
       "service_role_enum_role_type": {
         "type": "string",
-        "enum": ["conversation", "service"]
+        "enum": [
+          "conversation",
+          "service"
+        ]
       },
       "conversations.v1.service.service_user": {
         "type": "object",
@@ -1798,7 +1896,10 @@
       },
       "service_user_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "conversations.v1.service.service_user.service_user_conversation": {
         "type": "object",
@@ -1916,11 +2017,18 @@
       },
       "service_user_conversation_enum_notification_level": {
         "type": "string",
-        "enum": ["default", "muted"]
+        "enum": [
+          "default",
+          "muted"
+        ]
       },
       "service_user_conversation_enum_state": {
         "type": "string",
-        "enum": ["inactive", "active", "closed"]
+        "enum": [
+          "inactive",
+          "active",
+          "closed"
+        ]
       },
       "conversations.v1.service.service_configuration.service_webhook_configuration": {
         "type": "object",
@@ -1977,7 +2085,10 @@
       },
       "service_webhook_configuration_enum_method": {
         "type": "string",
-        "enum": ["GET", "POST"]
+        "enum": [
+          "GET",
+          "POST"
+        ]
       },
       "conversations.v1.user": {
         "type": "object",
@@ -2066,7 +2177,10 @@
       },
       "user_enum_webhook_enabled_type": {
         "type": "string",
-        "enum": ["true", "false"]
+        "enum": [
+          "true",
+          "false"
+        ]
       },
       "conversations.v1.user.user_conversation": {
         "type": "object",
@@ -2184,11 +2298,18 @@
       },
       "user_conversation_enum_notification_level": {
         "type": "string",
-        "enum": ["default", "muted"]
+        "enum": [
+          "default",
+          "muted"
+        ]
       },
       "user_conversation_enum_state": {
         "type": "string",
-        "enum": ["inactive", "active", "closed"]
+        "enum": [
+          "inactive",
+          "active",
+          "closed"
+        ]
       }
     },
     "securitySchemes": {
@@ -2231,7 +2352,6 @@
         "pathType": "instance"
       },
       "get": {
-        "tags": ["Configuration"],
         "description": "Fetch the global configuration of conversations on your account",
         "responses": {
           "200": {
@@ -2251,10 +2371,14 @@
           }
         ],
         "operationId": "FetchConfiguration",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Configuration"
+        ]
       },
       "post": {
-        "tags": ["Configuration"],
         "description": "Update the global configuration of conversations on your account",
         "responses": {
           "200": {
@@ -2274,7 +2398,9 @@
           }
         ],
         "operationId": "UpdateConfiguration",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2308,7 +2434,10 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Configuration"
+        ]
       }
     },
     "/v1/Configuration/Addresses": {
@@ -2319,12 +2448,16 @@
       ],
       "description": "Address Configuration resource manages the configurations related to a unique address within Conversations",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "type", "address", "friendly_name"],
+        "defaultOutputProperties": [
+          "sid",
+          "type",
+          "address",
+          "friendly_name"
+        ],
         "pathType": "list",
         "className": "address_configuration"
       },
       "get": {
-        "tags": ["Addresses"],
         "description": "Retrieve a list of address configurations for an account",
         "parameters": [
           {
@@ -2403,10 +2536,14 @@
           }
         ],
         "operationId": "ListConfigurationAddress",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Addresses"
+        ]
       },
       "post": {
-        "tags": ["Addresses"],
         "description": "Create a new address configuration",
         "responses": {
           "201": {
@@ -2426,7 +2563,9 @@
           }
         ],
         "operationId": "CreateConfigurationAddress",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2491,11 +2630,17 @@
                     "description": "For type `studio`, number of times to retry the webhook request"
                   }
                 },
-                "required": ["Type", "Address"]
+                "required": [
+                  "Type",
+                  "Address"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Addresses"
+        ]
       }
     },
     "/v1/Configuration/Addresses/{Sid}": {
@@ -2506,12 +2651,16 @@
       ],
       "description": "Address Configuration resource manages the configurations related to a unique address within Conversations",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "type", "address", "friendly_name"],
+        "defaultOutputProperties": [
+          "sid",
+          "type",
+          "address",
+          "friendly_name"
+        ],
         "pathType": "instance",
         "className": "address_configuration"
       },
       "get": {
-        "tags": ["Addresses"],
         "description": "Fetch an address configuration ",
         "parameters": [
           {
@@ -2542,10 +2691,14 @@
           }
         ],
         "operationId": "FetchConfigurationAddress",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Addresses"
+        ]
       },
       "post": {
-        "tags": ["Addresses"],
         "description": "Update an existing address configuration",
         "parameters": [
           {
@@ -2576,7 +2729,9 @@
           }
         ],
         "operationId": "UpdateConfigurationAddress",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2635,10 +2790,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Addresses"
+        ]
       },
       "delete": {
-        "tags": ["Addresses"],
         "description": "Remove an existing address configuration",
         "parameters": [
           {
@@ -2662,7 +2819,12 @@
           }
         ],
         "operationId": "DeleteConfigurationAddress",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Addresses"
+        ]
       }
     },
     "/v1/Configuration/Webhooks": {
@@ -2683,7 +2845,6 @@
         "parent": "/Configuration"
       },
       "get": {
-        "tags": ["Webhooks"],
         "description": "",
         "responses": {
           "200": {
@@ -2703,10 +2864,14 @@
           }
         ],
         "operationId": "FetchConfigurationWebhook",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       },
       "post": {
-        "tags": ["Webhooks"],
         "description": "",
         "responses": {
           "200": {
@@ -2726,7 +2891,9 @@
           }
         ],
         "operationId": "UpdateConfigurationWebhook",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2762,7 +2929,10 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Webhooks"
+        ]
       }
     },
     "/v1/Conversations": {
@@ -2782,7 +2952,6 @@
         "pathType": "list"
       },
       "post": {
-        "tags": ["Conversations"],
         "description": "Create a new conversation in your account's default service",
         "parameters": [
           {
@@ -2813,7 +2982,9 @@
           }
         ],
         "operationId": "CreateConversation",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -2867,10 +3038,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Conversations"
+        ]
       },
       "get": {
-        "tags": ["Conversations"],
         "description": "Retrieve a list of conversations in your account's default service",
         "parameters": [
           {
@@ -2941,7 +3114,12 @@
           }
         ],
         "operationId": "ListConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     },
     "/v1/Conversations/{Sid}": {
@@ -2961,7 +3139,6 @@
         "pathType": "instance"
       },
       "post": {
-        "tags": ["Conversations"],
         "description": "Update an existing conversation in your account's default service",
         "parameters": [
           {
@@ -3001,7 +3178,9 @@
           }
         ],
         "operationId": "UpdateConversation",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3055,10 +3234,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Conversations"
+        ]
       },
       "delete": {
-        "tags": ["Conversations"],
         "description": "Remove a conversation from your account's default service",
         "parameters": [
           {
@@ -3091,10 +3272,14 @@
           }
         ],
         "operationId": "DeleteConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       },
       "get": {
-        "tags": ["Conversations"],
         "description": "Fetch a conversation from your account's default service",
         "parameters": [
           {
@@ -3125,7 +3310,12 @@
           }
         ],
         "operationId": "FetchConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Messages": {
@@ -3136,12 +3326,16 @@
       ],
       "description": "A Message resource represents a message in a conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "index", "author", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "index",
+          "author",
+          "date_created"
+        ],
         "pathType": "list",
         "parent": "/Conversations"
       },
       "post": {
-        "tags": ["Messages"],
         "description": "Add a new message to the conversation",
         "parameters": [
           {
@@ -3181,7 +3375,9 @@
           }
         ],
         "operationId": "CreateConversationMessage",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3222,10 +3418,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Messages"
+        ]
       },
       "get": {
-        "tags": ["Messages"],
         "description": "Retrieve a list of all messages in the conversation",
         "parameters": [
           {
@@ -3314,7 +3512,12 @@
           }
         ],
         "operationId": "ListConversationMessage",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Messages"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Messages/{Sid}": {
@@ -3325,12 +3528,16 @@
       ],
       "description": "A Message resource represents a message in a conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "index", "author", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "index",
+          "author",
+          "date_created"
+        ],
         "pathType": "instance",
         "parent": "/Conversations"
       },
       "post": {
-        "tags": ["Messages"],
         "description": "Update an existing message in the conversation",
         "parameters": [
           {
@@ -3382,7 +3589,9 @@
           }
         ],
         "operationId": "UpdateConversationMessage",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3416,10 +3625,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Messages"
+        ]
       },
       "delete": {
-        "tags": ["Messages"],
         "description": "Remove a message from the conversation",
         "parameters": [
           {
@@ -3464,10 +3675,14 @@
           }
         ],
         "operationId": "DeleteConversationMessage",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Messages"
+        ]
       },
       "get": {
-        "tags": ["Messages"],
         "description": "Fetch a message from the conversation",
         "parameters": [
           {
@@ -3510,7 +3725,12 @@
           }
         ],
         "operationId": "FetchConversationMessage",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Messages"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Messages/{MessageSid}/Receipts/{Sid}": {
@@ -3532,7 +3752,6 @@
         "className": "delivery_receipt"
       },
       "get": {
-        "tags": ["Receipts"],
         "description": "Fetch the delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -3587,7 +3806,12 @@
           }
         ],
         "operationId": "FetchConversationMessageReceipt",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Receipts"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Messages/{MessageSid}/Receipts": {
@@ -3609,7 +3833,6 @@
         "className": "delivery_receipt"
       },
       "get": {
-        "tags": ["Receipts"],
         "description": "Retrieve a list of all delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -3701,7 +3924,12 @@
           }
         ],
         "operationId": "ListConversationMessageReceipt",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Receipts"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Participants": {
@@ -3712,12 +3940,14 @@
       ],
       "description": "A Participant resource represents a member of the conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "messaging_binding"],
+        "defaultOutputProperties": [
+          "sid",
+          "messaging_binding"
+        ],
         "pathType": "list",
         "parent": "/Conversations"
       },
       "post": {
-        "tags": ["Participants"],
         "description": "Add a new participant to the conversation",
         "parameters": [
           {
@@ -3757,7 +3987,9 @@
           }
         ],
         "operationId": "CreateConversationParticipant",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3806,10 +4038,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Participants"
+        ]
       },
       "get": {
-        "tags": ["Participants"],
         "description": "Retrieve a list of all participants of the conversation",
         "parameters": [
           {
@@ -3889,7 +4123,12 @@
           }
         ],
         "operationId": "ListConversationParticipant",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Participants"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Participants/{Sid}": {
@@ -3900,12 +4139,14 @@
       ],
       "description": "A Participant resource represents a member of the conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "messaging_binding"],
+        "defaultOutputProperties": [
+          "sid",
+          "messaging_binding"
+        ],
         "pathType": "instance",
         "parent": "/Conversations"
       },
       "post": {
-        "tags": ["Participants"],
         "description": "Update an existing participant in the conversation",
         "parameters": [
           {
@@ -3954,7 +4195,9 @@
           }
         ],
         "operationId": "UpdateConversationParticipant",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -3998,20 +4241,22 @@
                   "LastReadMessageIndex": {
                     "type": "integer",
                     "nullable": true,
-                    "description": "Index of last \u201cread\u201d message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
+                    "description": "Index of last “read” message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
                   },
                   "LastReadTimestamp": {
                     "type": "string",
-                    "description": "Timestamp of last \u201cread\u201d message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
+                    "description": "Timestamp of last “read” message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
                   }
                 }
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Participants"
+        ]
       },
       "delete": {
-        "tags": ["Participants"],
         "description": "Remove a participant from the conversation",
         "parameters": [
           {
@@ -4053,10 +4298,14 @@
           }
         ],
         "operationId": "DeleteConversationParticipant",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Participants"
+        ]
       },
       "get": {
-        "tags": ["Participants"],
         "description": "Fetch a participant of the conversation",
         "parameters": [
           {
@@ -4096,7 +4345,12 @@
           }
         ],
         "operationId": "FetchConversationParticipant",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Participants"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Webhooks": {
@@ -4107,12 +4361,14 @@
       ],
       "description": "A Scoped Webhook resource manages a set of callback URLs and their configuration for receiving events specific to one conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "target"],
+        "defaultOutputProperties": [
+          "sid",
+          "target"
+        ],
         "pathType": "list",
         "parent": "/Conversations"
       },
       "get": {
-        "tags": ["Webhooks"],
         "description": "Retrieve a list of all webhooks scoped to the conversation",
         "parameters": [
           {
@@ -4192,10 +4448,14 @@
           }
         ],
         "operationId": "ListConversationScopedWebhook",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       },
       "post": {
-        "tags": ["Webhooks"],
         "description": "Create a new webhook scoped to the conversation",
         "parameters": [
           {
@@ -4226,7 +4486,9 @@
           }
         ],
         "operationId": "CreateConversationScopedWebhook",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4274,11 +4536,16 @@
                     "description": "The message index for which and it's successors the webhook will be replayed. Not set by default"
                   }
                 },
-                "required": ["Target"]
+                "required": [
+                  "Target"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Webhooks"
+        ]
       }
     },
     "/v1/Conversations/{ConversationSid}/Webhooks/{Sid}": {
@@ -4289,12 +4556,14 @@
       ],
       "description": "A Scoped Webhook resource manages a set of callback URLs and their configuration for receiving events specific to one conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "target"],
+        "defaultOutputProperties": [
+          "sid",
+          "target"
+        ],
         "pathType": "instance",
         "parent": "/Conversations"
       },
       "get": {
-        "tags": ["Webhooks"],
         "description": "Fetch the configuration of a conversation-scoped webhook",
         "parameters": [
           {
@@ -4337,10 +4606,14 @@
           }
         ],
         "operationId": "FetchConversationScopedWebhook",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       },
       "post": {
-        "tags": ["Webhooks"],
         "description": "Update an existing conversation-scoped webhook",
         "parameters": [
           {
@@ -4383,7 +4656,9 @@
           }
         ],
         "operationId": "UpdateConversationScopedWebhook",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4425,10 +4700,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Webhooks"
+        ]
       },
       "delete": {
-        "tags": ["Webhooks"],
         "description": "Remove an existing webhook scoped to the conversation",
         "parameters": [
           {
@@ -4464,7 +4741,12 @@
           }
         ],
         "operationId": "DeleteConversationScopedWebhook",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       }
     },
     "/v1/Credentials": {
@@ -4475,11 +4757,14 @@
       ],
       "description": "A Credential resource represents a push notification credential.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "type"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "type"
+        ],
         "pathType": "list"
       },
       "post": {
-        "tags": ["Credentials"],
         "description": "Add a new push notification credential to your account",
         "responses": {
           "201": {
@@ -4499,7 +4784,9 @@
           }
         ],
         "operationId": "CreateCredential",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4537,14 +4824,18 @@
                     "description": "[FCM only] The **Server key** of your project from the Firebase console, found under Settings / Cloud messaging."
                   }
                 },
-                "required": ["Type"]
+                "required": [
+                  "Type"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Credentials"
+        ]
       },
       "get": {
-        "tags": ["Credentials"],
         "description": "Retrieve a list of all push notification credentials on your account",
         "parameters": [
           {
@@ -4615,7 +4906,12 @@
           }
         ],
         "operationId": "ListCredential",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Credentials"
+        ]
       }
     },
     "/v1/Credentials/{Sid}": {
@@ -4626,11 +4922,14 @@
       ],
       "description": "A Credential resource represents a push notification credential.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "type"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "type"
+        ],
         "pathType": "instance"
       },
       "post": {
-        "tags": ["Credentials"],
         "description": "Update an existing push notification credential on your account",
         "parameters": [
           {
@@ -4664,7 +4963,9 @@
           }
         ],
         "operationId": "UpdateCredential",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4705,10 +5006,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Credentials"
+        ]
       },
       "delete": {
-        "tags": ["Credentials"],
         "description": "Remove a push notification credential from your account",
         "parameters": [
           {
@@ -4735,10 +5038,14 @@
           }
         ],
         "operationId": "DeleteCredential",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Credentials"
+        ]
       },
       "get": {
-        "tags": ["Credentials"],
         "description": "Fetch a push notification credential from your account",
         "parameters": [
           {
@@ -4772,7 +5079,12 @@
           }
         ],
         "operationId": "FetchCredential",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Credentials"
+        ]
       }
     },
     "/v1/ParticipantConversations": {
@@ -4791,7 +5103,6 @@
         "pathType": "list"
       },
       "get": {
-        "tags": ["Participant Conversations"],
         "description": "Retrieve a list of all Conversations that this Participant belongs to by identity or by address. Only one parameter should be specified.",
         "parameters": [
           {
@@ -4878,7 +5189,12 @@
           }
         ],
         "operationId": "ListParticipantConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "ParticipantConversations"
+        ]
       }
     },
     "/v1/Roles": {
@@ -4889,11 +5205,14 @@
       ],
       "description": "A Role resource represents a set of permissions granted to a user within a service or a conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "type"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "type"
+        ],
         "pathType": "list"
       },
       "post": {
-        "tags": ["Roles"],
         "description": "Create a new user role in your account's default service",
         "responses": {
           "201": {
@@ -4913,7 +5232,9 @@
           }
         ],
         "operationId": "CreateRole",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -4938,14 +5259,20 @@
                     "description": "A permission that you grant to the new role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. The values for this parameter depend on the role's `type`."
                   }
                 },
-                "required": ["FriendlyName", "Type", "Permission"]
+                "required": [
+                  "FriendlyName",
+                  "Type",
+                  "Permission"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Roles"
+        ]
       },
       "get": {
-        "tags": ["Roles"],
         "description": "Retrieve a list of all user roles in your account's default service",
         "parameters": [
           {
@@ -5016,7 +5343,12 @@
           }
         ],
         "operationId": "ListRole",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Roles"
+        ]
       }
     },
     "/v1/Roles/{Sid}": {
@@ -5027,11 +5359,14 @@
       ],
       "description": "A Role resource represents a set of permissions granted to a user within a service or a conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "type"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "type"
+        ],
         "pathType": "instance"
       },
       "post": {
-        "tags": ["Roles"],
         "description": "Update an existing user role in your account's default service",
         "parameters": [
           {
@@ -5065,7 +5400,9 @@
           }
         ],
         "operationId": "UpdateRole",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5081,14 +5418,18 @@
                     "description": "A permission that you grant to the role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. Note that the update action replaces all previously assigned permissions with those defined in the update action. To remove a permission, do not include it in the subsequent update action. The values for this parameter depend on the role's `type`."
                   }
                 },
-                "required": ["Permission"]
+                "required": [
+                  "Permission"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Roles"
+        ]
       },
       "delete": {
-        "tags": ["Roles"],
         "description": "Remove a user role from your account's default service",
         "parameters": [
           {
@@ -5115,10 +5456,14 @@
           }
         ],
         "operationId": "DeleteRole",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Roles"
+        ]
       },
       "get": {
-        "tags": ["Roles"],
         "description": "Fetch a user role from your account's default service",
         "parameters": [
           {
@@ -5152,7 +5497,12 @@
           }
         ],
         "operationId": "FetchRole",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Roles"
+        ]
       }
     },
     "/v1/Services": {
@@ -5163,11 +5513,13 @@
       ],
       "description": "A Service resource is a top-level conversation resource container that serves as a data silo.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name"
+        ],
         "pathType": "list"
       },
       "post": {
-        "tags": ["Services"],
         "description": "Create a new conversation service on your account",
         "responses": {
           "201": {
@@ -5187,7 +5539,9 @@
           }
         ],
         "operationId": "CreateService",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5200,14 +5554,18 @@
                     "description": "The human-readable name of this service, limited to 256 characters. Optional."
                   }
                 },
-                "required": ["FriendlyName"]
+                "required": [
+                  "FriendlyName"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Services"
+        ]
       },
       "get": {
-        "tags": ["Services"],
         "description": "Retrieve a list of all conversation services on your account",
         "parameters": [
           {
@@ -5278,7 +5636,12 @@
           }
         ],
         "operationId": "ListService",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Services"
+        ]
       }
     },
     "/v1/Services/{Sid}": {
@@ -5289,11 +5652,13 @@
       ],
       "description": "A Service resource is a top-level conversation resource container that serves as a data silo.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name"
+        ],
         "pathType": "instance"
       },
       "delete": {
-        "tags": ["Services"],
         "description": "Remove a conversation service with all its nested resources from your account",
         "parameters": [
           {
@@ -5320,10 +5685,14 @@
           }
         ],
         "operationId": "DeleteService",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Services"
+        ]
       },
       "get": {
-        "tags": ["Services"],
         "description": "Fetch a conversation service from your account",
         "parameters": [
           {
@@ -5357,7 +5726,12 @@
           }
         ],
         "operationId": "FetchService",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Services"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Bindings/{Sid}": {
@@ -5368,12 +5742,15 @@
       ],
       "description": "A Binding resource represents a push notification binding and its configuration, for delivering conversation events to mobile or web endpoints.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "endpoint", "identity"],
+        "defaultOutputProperties": [
+          "sid",
+          "endpoint",
+          "identity"
+        ],
         "pathType": "instance",
         "parent": "/Services"
       },
       "delete": {
-        "tags": ["Services Bindings"],
         "description": "Remove a push notification binding from the conversation service",
         "parameters": [
           {
@@ -5412,10 +5789,14 @@
           }
         ],
         "operationId": "DeleteServiceBinding",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Bindings"
+        ]
       },
       "get": {
-        "tags": ["Services Bindings"],
         "description": "Fetch a push notification binding from the conversation service",
         "parameters": [
           {
@@ -5461,7 +5842,12 @@
           }
         ],
         "operationId": "FetchServiceBinding",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Bindings"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Bindings": {
@@ -5472,12 +5858,15 @@
       ],
       "description": "A Binding resource represents a push notification binding and its configuration, for delivering conversation events to mobile or web endpoints.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "endpoint", "identity"],
+        "defaultOutputProperties": [
+          "sid",
+          "endpoint",
+          "identity"
+        ],
         "pathType": "list",
         "parent": "/Services"
       },
       "get": {
-        "tags": ["Services Bindings"],
         "description": "Retrieve a list of all push notification bindings in the conversation service",
         "parameters": [
           {
@@ -5583,7 +5972,12 @@
           }
         ],
         "operationId": "ListServiceBinding",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Bindings"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Configuration": {
@@ -5594,12 +5988,13 @@
       ],
       "description": "A Service Configuration resource manages service-level settings applicable to the Conversation API.",
       "x-twilio": {
-        "defaultOutputProperties": ["chat_service_sid"],
+        "defaultOutputProperties": [
+          "chat_service_sid"
+        ],
         "pathType": "instance",
         "parent": "/Services"
       },
       "get": {
-        "tags": ["Services Configuration"],
         "description": "Fetch the configuration of a conversation service",
         "parameters": [
           {
@@ -5633,10 +6028,14 @@
           }
         ],
         "operationId": "FetchServiceConfiguration",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Configuration"
+        ]
       },
       "post": {
-        "tags": ["Services Configuration"],
         "description": "Update configuration settings of a conversation service",
         "parameters": [
           {
@@ -5670,7 +6069,9 @@
           }
         ],
         "operationId": "UpdateServiceConfiguration",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5707,7 +6108,10 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Configuration"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations": {
@@ -5728,7 +6132,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Services Conversations"],
         "description": "Create a new conversation in your service",
         "parameters": [
           {
@@ -5771,7 +6174,9 @@
           }
         ],
         "operationId": "CreateServiceConversation",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -5825,10 +6230,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Conversations"
+        ]
       },
       "get": {
-        "tags": ["Services Conversations"],
         "description": "Retrieve a list of conversations in your service",
         "parameters": [
           {
@@ -5911,7 +6318,12 @@
           }
         ],
         "operationId": "ListServiceConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{Sid}": {
@@ -5932,7 +6344,6 @@
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Services Conversations"],
         "description": "Update an existing conversation in your service",
         "parameters": [
           {
@@ -5984,7 +6395,9 @@
           }
         ],
         "operationId": "UpdateServiceConversation",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -6038,10 +6451,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Conversations"
+        ]
       },
       "delete": {
-        "tags": ["Services Conversations"],
         "description": "Remove a conversation from your service",
         "parameters": [
           {
@@ -6086,10 +6501,14 @@
           }
         ],
         "operationId": "DeleteServiceConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       },
       "get": {
-        "tags": ["Services Conversations"],
         "description": "Fetch a conversation from your service",
         "parameters": [
           {
@@ -6132,7 +6551,12 @@
           }
         ],
         "operationId": "FetchServiceConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Messages": {
@@ -6143,12 +6567,16 @@
       ],
       "description": "A Service Message resource represents a message in a conversation within a specific service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "index", "author", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "index",
+          "author",
+          "date_created"
+        ],
         "pathType": "list",
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
-        "tags": ["Services Messages"],
         "description": "Add a new message to the conversation in a specific service",
         "parameters": [
           {
@@ -6200,7 +6628,9 @@
           }
         ],
         "operationId": "CreateServiceConversationMessage",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -6241,10 +6671,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Messages"
+        ]
       },
       "get": {
-        "tags": ["Services Messages"],
         "description": "Retrieve a list of all messages in the conversation",
         "parameters": [
           {
@@ -6345,7 +6777,12 @@
           }
         ],
         "operationId": "ListServiceConversationMessage",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Messages"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Messages/{Sid}": {
@@ -6356,12 +6793,16 @@
       ],
       "description": "A Service Message resource represents a message in a conversation within a specific service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "index", "author", "date_created"],
+        "defaultOutputProperties": [
+          "sid",
+          "index",
+          "author",
+          "date_created"
+        ],
         "pathType": "instance",
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
-        "tags": ["Services Messages"],
         "description": "Update an existing message in the conversation",
         "parameters": [
           {
@@ -6425,7 +6866,9 @@
           }
         ],
         "operationId": "UpdateServiceConversationMessage",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -6459,10 +6902,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Messages"
+        ]
       },
       "delete": {
-        "tags": ["Services Messages"],
         "description": "Remove a message from the conversation",
         "parameters": [
           {
@@ -6519,10 +6964,14 @@
           }
         ],
         "operationId": "DeleteServiceConversationMessage",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Messages"
+        ]
       },
       "get": {
-        "tags": ["Services Messages"],
         "description": "Fetch a message from the conversation",
         "parameters": [
           {
@@ -6577,7 +7026,12 @@
           }
         ],
         "operationId": "FetchServiceConversationMessage",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Messages"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Messages/{MessageSid}/Receipts/{Sid}": {
@@ -6599,7 +7053,6 @@
         "className": "delivery_receipt"
       },
       "get": {
-        "tags": ["Services Receipts"],
         "description": "Fetch the delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -6666,7 +7119,12 @@
           }
         ],
         "operationId": "FetchServiceConversationMessageReceipt",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Receipts"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Messages/{MessageSid}/Receipts": {
@@ -6688,7 +7146,6 @@
         "className": "delivery_receipt"
       },
       "get": {
-        "tags": ["Services Receipts"],
         "description": "Retrieve a list of all delivery and read receipts of the conversation message",
         "parameters": [
           {
@@ -6792,7 +7249,12 @@
           }
         ],
         "operationId": "ListServiceConversationMessageReceipt",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Receipts"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Participants": {
@@ -6803,12 +7265,14 @@
       ],
       "description": "A Service Participant resource represents a member of the conversation within a specific service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "messaging_binding"],
+        "defaultOutputProperties": [
+          "sid",
+          "messaging_binding"
+        ],
         "pathType": "list",
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
-        "tags": ["Services Participants"],
         "description": "Add a new participant to the conversation in a specific service",
         "parameters": [
           {
@@ -6860,7 +7324,9 @@
           }
         ],
         "operationId": "CreateServiceConversationParticipant",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -6909,10 +7375,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Participants"
+        ]
       },
       "get": {
-        "tags": ["Services Participants"],
         "description": "Retrieve a list of all participants of the conversation",
         "parameters": [
           {
@@ -7004,7 +7472,12 @@
           }
         ],
         "operationId": "ListServiceConversationParticipant",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Participants"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Participants/{Sid}": {
@@ -7015,12 +7488,14 @@
       ],
       "description": "A Service Participant resource represents a member of the conversation within a specific service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "messaging_binding"],
+        "defaultOutputProperties": [
+          "sid",
+          "messaging_binding"
+        ],
         "pathType": "instance",
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
-        "tags": ["Services Participants"],
         "description": "Update an existing participant in the conversation",
         "parameters": [
           {
@@ -7081,7 +7556,9 @@
           }
         ],
         "operationId": "UpdateServiceConversationParticipant",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -7125,20 +7602,22 @@
                   "LastReadMessageIndex": {
                     "type": "integer",
                     "nullable": true,
-                    "description": "Index of last \u201cread\u201d message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
+                    "description": "Index of last “read” message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
                   },
                   "LastReadTimestamp": {
                     "type": "string",
-                    "description": "Timestamp of last \u201cread\u201d message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
+                    "description": "Timestamp of last “read” message in the [Conversation](https://www.twilio.com/docs/conversations/api/conversation-resource) for the Participant."
                   }
                 }
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Participants"
+        ]
       },
       "delete": {
-        "tags": ["Services Participants"],
         "description": "Remove a participant from the conversation",
         "parameters": [
           {
@@ -7192,10 +7671,14 @@
           }
         ],
         "operationId": "DeleteServiceConversationParticipant",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Participants"
+        ]
       },
       "get": {
-        "tags": ["Services Participants"],
         "description": "Fetch a participant of the conversation",
         "parameters": [
           {
@@ -7247,7 +7730,12 @@
           }
         ],
         "operationId": "FetchServiceConversationParticipant",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Participants"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Webhooks": {
@@ -7258,12 +7746,14 @@
       ],
       "description": "A Conversation-scoped Webhook resource manages a set of callback URLs and their configuration for receiving events specific to one conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "target"],
+        "defaultOutputProperties": [
+          "sid",
+          "target"
+        ],
         "pathType": "list",
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
-        "tags": ["Services Webhooks"],
         "description": "Create a new webhook scoped to the conversation in a specific service",
         "parameters": [
           {
@@ -7306,7 +7796,9 @@
           }
         ],
         "operationId": "CreateServiceConversationScopedWebhook",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -7354,14 +7846,18 @@
                     "description": "The message index for which and it's successors the webhook will be replayed. Not set by default"
                   }
                 },
-                "required": ["Target"]
+                "required": [
+                  "Target"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Webhooks"
+        ]
       },
       "get": {
-        "tags": ["Services Webhooks"],
         "description": "Retrieve a list of all webhooks scoped to the conversation",
         "parameters": [
           {
@@ -7453,7 +7949,12 @@
           }
         ],
         "operationId": "ListServiceConversationScopedWebhook",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Conversations/{ConversationSid}/Webhooks/{Sid}": {
@@ -7464,12 +7965,14 @@
       ],
       "description": "A Conversation-scoped Webhook resource manages a set of callback URLs and their configuration for receiving events specific to one conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "target"],
+        "defaultOutputProperties": [
+          "sid",
+          "target"
+        ],
         "pathType": "instance",
         "parent": "/Services/{ChatServiceSid}/Conversations"
       },
       "post": {
-        "tags": ["Services Webhooks"],
         "description": "Update an existing conversation-scoped webhook",
         "parameters": [
           {
@@ -7524,7 +8027,9 @@
           }
         ],
         "operationId": "UpdateServiceConversationScopedWebhook",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -7566,10 +8071,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Webhooks"
+        ]
       },
       "delete": {
-        "tags": ["Services Webhooks"],
         "description": "Remove an existing webhook scoped to the conversation",
         "parameters": [
           {
@@ -7617,10 +8124,14 @@
           }
         ],
         "operationId": "DeleteServiceConversationScopedWebhook",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       },
       "get": {
-        "tags": ["Services Webhooks"],
         "description": "Fetch the configuration of a conversation-scoped webhook",
         "parameters": [
           {
@@ -7675,7 +8186,12 @@
           }
         ],
         "operationId": "FetchServiceConversationScopedWebhook",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Configuration/Notifications": {
@@ -7686,12 +8202,13 @@
       ],
       "description": "A Service Notification resource manages a set of settings to determine push notification behavior at service level.",
       "x-twilio": {
-        "defaultOutputProperties": ["chat_service_sid"],
+        "defaultOutputProperties": [
+          "chat_service_sid"
+        ],
         "pathType": "instance",
         "parent": "/Services/{ChatServiceSid}/Configuration"
       },
       "post": {
-        "tags": ["Services Notifications"],
         "description": "Update push notification service settings",
         "parameters": [
           {
@@ -7725,7 +8242,9 @@
           }
         ],
         "operationId": "UpdateServiceNotification",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -7789,10 +8308,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Notifications"
+        ]
       },
       "get": {
-        "tags": ["Services Notifications"],
         "description": "Fetch push notification service settings",
         "parameters": [
           {
@@ -7826,7 +8347,12 @@
           }
         ],
         "operationId": "FetchServiceNotification",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Notifications"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/ParticipantConversations": {
@@ -7846,7 +8372,6 @@
         "parent": "/Services"
       },
       "get": {
-        "tags": ["Services Participant Conversations"],
         "description": "Retrieve a list of all Conversations that this Participant belongs to by identity or by address. Only one parameter should be specified.",
         "parameters": [
           {
@@ -7945,7 +8470,12 @@
           }
         ],
         "operationId": "ListServiceParticipantConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "ParticipantConversations"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Roles": {
@@ -7956,12 +8486,15 @@
       ],
       "description": "A Service Role resource represents a set of permissions granted to a user within a service or a conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "type"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "type"
+        ],
         "pathType": "list",
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Services Roles"],
         "description": "Create a new user role in your service",
         "parameters": [
           {
@@ -7995,7 +8528,9 @@
           }
         ],
         "operationId": "CreateServiceRole",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -8020,14 +8555,20 @@
                     "description": "A permission that you grant to the new role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. The values for this parameter depend on the role's `type`."
                   }
                 },
-                "required": ["FriendlyName", "Type", "Permission"]
+                "required": [
+                  "FriendlyName",
+                  "Type",
+                  "Permission"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Roles"
+        ]
       },
       "get": {
-        "tags": ["Services Roles"],
         "description": "Retrieve a list of all user roles in your service",
         "parameters": [
           {
@@ -8110,7 +8651,12 @@
           }
         ],
         "operationId": "ListServiceRole",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Roles"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Roles/{Sid}": {
@@ -8121,12 +8667,15 @@
       ],
       "description": "A Service Role resource represents a set of permissions granted to a user within a service or a conversation.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "friendly_name", "type"],
+        "defaultOutputProperties": [
+          "sid",
+          "friendly_name",
+          "type"
+        ],
         "pathType": "instance",
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Services Roles"],
         "description": "Update an existing user role in your service",
         "parameters": [
           {
@@ -8172,7 +8721,9 @@
           }
         ],
         "operationId": "UpdateServiceRole",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -8188,14 +8739,18 @@
                     "description": "A permission that you grant to the role. Only one permission can be granted per parameter. To assign more than one permission, repeat this parameter for each permission value. Note that the update action replaces all previously assigned permissions with those defined in the update action. To remove a permission, do not include it in the subsequent update action. The values for this parameter depend on the role's `type`."
                   }
                 },
-                "required": ["Permission"]
+                "required": [
+                  "Permission"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Roles"
+        ]
       },
       "delete": {
-        "tags": ["Services Roles"],
         "description": "Remove a user role from your service",
         "parameters": [
           {
@@ -8234,10 +8789,14 @@
           }
         ],
         "operationId": "DeleteServiceRole",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Roles"
+        ]
       },
       "get": {
-        "tags": ["Services Roles"],
         "description": "Fetch a user role from your service",
         "parameters": [
           {
@@ -8283,7 +8842,12 @@
           }
         ],
         "operationId": "FetchServiceRole",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Roles"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Users": {
@@ -8294,12 +8858,14 @@
       ],
       "description": "A Service User resource represents a conversation user belonging to a specific conversation service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "identity"],
+        "defaultOutputProperties": [
+          "sid",
+          "identity"
+        ],
         "pathType": "list",
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Services Users"],
         "description": "Add a new conversation user to your service",
         "parameters": [
           {
@@ -8342,7 +8908,9 @@
           }
         ],
         "operationId": "CreateServiceUser",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -8370,14 +8938,18 @@
                     "description": "The SID of a service-level [Role](https://www.twilio.com/docs/conversations/api/role-resource) to assign to the user."
                   }
                 },
-                "required": ["Identity"]
+                "required": [
+                  "Identity"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Users"
+        ]
       },
       "get": {
-        "tags": ["Services Users"],
         "description": "Retrieve a list of all conversation users in your service",
         "parameters": [
           {
@@ -8460,7 +9032,12 @@
           }
         ],
         "operationId": "ListServiceUser",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Users"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Users/{Sid}": {
@@ -8471,12 +9048,14 @@
       ],
       "description": "A Service User resource represents a conversation user belonging to a specific conversation service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "identity"],
+        "defaultOutputProperties": [
+          "sid",
+          "identity"
+        ],
         "pathType": "instance",
         "parent": "/Services"
       },
       "post": {
-        "tags": ["Services Users"],
         "description": "Update an existing conversation user in your service",
         "parameters": [
           {
@@ -8528,7 +9107,9 @@
           }
         ],
         "operationId": "UpdateServiceUser",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -8555,10 +9136,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Users"
+        ]
       },
       "delete": {
-        "tags": ["Services Users"],
         "description": "Remove a conversation user from your service",
         "parameters": [
           {
@@ -8603,10 +9186,14 @@
           }
         ],
         "operationId": "DeleteServiceUser",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Users"
+        ]
       },
       "get": {
-        "tags": ["Services Users"],
         "description": "Fetch a conversation user from your service",
         "parameters": [
           {
@@ -8649,7 +9236,12 @@
           }
         ],
         "operationId": "FetchServiceUser",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Users"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Users/{UserSid}/Conversations/{ConversationSid}": {
@@ -8672,7 +9264,6 @@
         "className": "user_conversation"
       },
       "post": {
-        "tags": ["Services Conversations"],
         "description": "Update a specific User Conversation.",
         "parameters": [
           {
@@ -8724,7 +9315,9 @@
           }
         ],
         "operationId": "UpdateServiceUserConversation",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -8751,10 +9344,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Conversations"
+        ]
       },
       "delete": {
-        "tags": ["Services Conversations"],
         "description": "Delete a specific User Conversation.",
         "parameters": [
           {
@@ -8799,10 +9394,14 @@
           }
         ],
         "operationId": "DeleteServiceUserConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       },
       "get": {
-        "tags": ["Services Conversations"],
         "description": "Fetch a specific User Conversation.",
         "parameters": [
           {
@@ -8854,7 +9453,12 @@
           }
         ],
         "operationId": "FetchServiceUserConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Users/{UserSid}/Conversations": {
@@ -8877,7 +9481,6 @@
         "className": "user_conversation"
       },
       "get": {
-        "tags": ["Services Conversations"],
         "description": "Retrieve a list of all User Conversations for the User.",
         "parameters": [
           {
@@ -8969,7 +9572,12 @@
           }
         ],
         "operationId": "ListServiceUserConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     },
     "/v1/Services/{ChatServiceSid}/Configuration/Webhooks": {
@@ -8980,12 +9588,13 @@
       ],
       "description": "A service webhook configuration resource manages a service-level set of callback URLs and their configuration for receiving all the corresponding service events.",
       "x-twilio": {
-        "defaultOutputProperties": ["chat_service_sid"],
+        "defaultOutputProperties": [
+          "chat_service_sid"
+        ],
         "pathType": "instance",
         "parent": "/Services/{ChatServiceSid}/Configuration"
       },
       "post": {
-        "tags": ["Services Webhooks"],
         "description": "Update a specific Webhook.",
         "parameters": [
           {
@@ -9019,7 +9628,9 @@
           }
         ],
         "operationId": "UpdateServiceWebhookConfiguration",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -9052,10 +9663,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Webhooks"
+        ]
       },
       "get": {
-        "tags": ["Services Webhooks"],
         "description": "Fetch a specific service webhook configuration.",
         "parameters": [
           {
@@ -9089,7 +9702,12 @@
           }
         ],
         "operationId": "FetchServiceWebhookConfiguration",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Webhooks"
+        ]
       }
     },
     "/v1/Users": {
@@ -9100,11 +9718,13 @@
       ],
       "description": "A User resource represents a conversation user belonging to a default conversation service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "identity"],
+        "defaultOutputProperties": [
+          "sid",
+          "identity"
+        ],
         "pathType": "list"
       },
       "post": {
-        "tags": ["Users"],
         "description": "Add a new conversation user to your account's default service",
         "parameters": [
           {
@@ -9135,7 +9755,9 @@
           }
         ],
         "operationId": "CreateUser",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -9163,14 +9785,18 @@
                     "description": "The SID of a service-level [Role](https://www.twilio.com/docs/conversations/api/role-resource) to assign to the user."
                   }
                 },
-                "required": ["Identity"]
+                "required": [
+                  "Identity"
+                ]
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Users"
+        ]
       },
       "get": {
-        "tags": ["Users"],
         "description": "Retrieve a list of all conversation users in your account's default service",
         "parameters": [
           {
@@ -9241,7 +9867,12 @@
           }
         ],
         "operationId": "ListUser",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Users"
+        ]
       }
     },
     "/v1/Users/{Sid}": {
@@ -9252,11 +9883,13 @@
       ],
       "description": "A User resource represents a conversation user belonging to a default conversation service.",
       "x-twilio": {
-        "defaultOutputProperties": ["sid", "identity"],
+        "defaultOutputProperties": [
+          "sid",
+          "identity"
+        ],
         "pathType": "instance"
       },
       "post": {
-        "tags": ["Users"],
         "description": "Update an existing conversation user in your account's default service",
         "parameters": [
           {
@@ -9296,7 +9929,9 @@
           }
         ],
         "operationId": "UpdateUser",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -9323,10 +9958,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Users"
+        ]
       },
       "delete": {
-        "tags": ["Users"],
         "description": "Remove a conversation user from your account's default service",
         "parameters": [
           {
@@ -9359,10 +9996,14 @@
           }
         ],
         "operationId": "DeleteUser",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Users"
+        ]
       },
       "get": {
-        "tags": ["Users"],
         "description": "Fetch a conversation user from your account's default service",
         "parameters": [
           {
@@ -9393,7 +10034,12 @@
           }
         ],
         "operationId": "FetchUser",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Users"
+        ]
       }
     },
     "/v1/Users/{UserSid}/Conversations/{ConversationSid}": {
@@ -9416,7 +10062,6 @@
         "className": "user_conversation"
       },
       "post": {
-        "tags": ["Conversations"],
         "description": "Update a specific User Conversation.",
         "parameters": [
           {
@@ -9456,7 +10101,9 @@
           }
         ],
         "operationId": "UpdateUserConversation",
-        "x-maturity": ["GA"],
+        "x-maturity": [
+          "GA"
+        ],
         "requestBody": {
           "content": {
             "application/x-www-form-urlencoded": {
@@ -9483,10 +10130,12 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "Conversations"
+        ]
       },
       "delete": {
-        "tags": ["Conversations"],
         "description": "Delete a specific User Conversation.",
         "parameters": [
           {
@@ -9519,10 +10168,14 @@
           }
         ],
         "operationId": "DeleteUserConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       },
       "get": {
-        "tags": ["Conversations"],
         "description": "Fetch a specific User Conversation.",
         "parameters": [
           {
@@ -9562,7 +10215,12 @@
           }
         ],
         "operationId": "FetchUserConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     },
     "/v1/Users/{UserSid}/Conversations": {
@@ -9585,7 +10243,6 @@
         "className": "user_conversation"
       },
       "get": {
-        "tags": ["Conversations"],
         "description": "Retrieve a list of all User Conversations for the User.",
         "parameters": [
           {
@@ -9665,7 +10322,12 @@
           }
         ],
         "operationId": "ListUserConversation",
-        "x-maturity": ["GA"]
+        "x-maturity": [
+          "GA"
+        ],
+        "tags": [
+          "Conversations"
+        ]
       }
     }
   },
