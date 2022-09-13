@@ -14,11 +14,11 @@ Click one of the links below to view the Swagger Doc.
 
 | Swagger Doc                                                                                 | Description                                         |
 | ------------------------------------------------------------------------------------------- | --------------------------------------------------- |
-| [Twilio 2010 API](https://johnchaffee.wiki/twilio-swagger/apis/api_v2010/)                  | Send messages and manage accounts and phone numbers |
-| [Twilio Lookups v2 API](https://johnchaffee.wiki/twilio-swagger/apis/lookups_v2/)           | Validate Phone Number formats and types             |
-| [Twilio Verify API](https://johnchaffee.wiki/twilio-swagger/apis/verify_v2/)                | Send and validate one-time-passcodes                |
-| [Twilio Messaging Services API](https://johnchaffee.wiki/twilio-swagger/apis/messaging_v1/) | Manage Messaging Services and Number Pools          |
-| [Twilio Conversations API](https://johnchaffee.wiki/twilio-swagger/apis/conversations_v1/)  | Manage 2-way human-to-human conversations           |
+| [Twilio 2010 API](https://johnchaffee.wiki/twilio-swagger/api/api_v2010/)                  | Send messages and manage accounts and phone numbers |
+| [Twilio Lookups v2 API](https://johnchaffee.wiki/twilio-swagger/api/lookups_v2/)           | Validate Phone Number formats and types             |
+| [Twilio Verify API](https://johnchaffee.wiki/twilio-swagger/api/verify_v2/)                | Send and validate one-time-passcodes                |
+| [Twilio Messaging Services API](https://johnchaffee.wiki/twilio-swagger/api/messaging_v1/) | Manage Messaging Services and Number Pools          |
+| [Twilio Conversations API](https://johnchaffee.wiki/twilio-swagger/api/conversations_v1/)  | Manage 2-way human-to-human conversations           |
 
 ## Instructions
 
@@ -26,7 +26,7 @@ Click one of the links below to view the Swagger Doc.
 - Open one of the Swagger UI Docs above
 - Click the Authorize button on the top right and enter your `TWILIO_ACCOUNT_SID` and `TWILIO_AUTH_TOKEN` as the username and password.
 - Click the method you want to run. For example, to send an SMS:
-  - Click the [CreateMessage](https://johnchaffee.wiki/twilio-swagger/apis/messaging/#/Messages/CreateMessage) path.
+  - Click the [CreateMessage](https://johnchaffee.wiki/twilio-swagger/api/api_v2010/#/Messages/CreateMessage) path.
   - Click the `Try it out` button
   - Fill in the required parametes (e.g. `AccountSid`, `Body`, `From`, `To`)
   - Uncheck all of the `Send empty value` checkboxes.
