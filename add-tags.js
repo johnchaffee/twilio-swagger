@@ -21,14 +21,14 @@ fs.readdir(sourceDir, (err, files) => {
       specsArray.push(file)
     }
   })
-  console.log("specsArray", specsArray)
+  // console.log("specsArray", specsArray)
 
   // Loop through each source spec
   specsArray.forEach((spec) => {
     console.log(spec)
     slug = spec.replaceAll(/(twilio_|.json)/g, "")
     console.log(slug)
-    // Create directory
+    // Create directory from the slug name
     fs.mkdirSync(`./api/${slug}`, { recursive: true })
     // Read sourcefile
     const data = require("../twilio-oai/spec/json/" + spec)
@@ -39,7 +39,7 @@ fs.readdir(sourceDir, (err, files) => {
       // console.log("PATH", path)
       pathsArray.push(path)
     }
-    console.log("PATHS ARRAY", pathsArray)
+    // console.log("PATHS ARRAY", pathsArray)
 
     // Loop through the paths in the spec
     pathsArray.forEach((path) => {
@@ -47,18 +47,23 @@ fs.readdir(sourceDir, (err, files) => {
       // console.log("PATH COMPONENTS", path_components)
       last = path_components[path_components.length - 1]
       // console.log("LAST", last)
+      // Create a tag name from the last component of the path
       tag = last.replace("/", "")
       // console.log("TAG", tag)
       pathObject = paths[path]
       pathObjectArray = []
+      // Create an array of the root level properties in the path
       for (let prop in pathObject) {
         // console.log("PROP", prop)
         pathObjectArray.push(prop)
       }
       // console.log("OBJECT ARRAY", pathObjectArray)
+
       // Loop through the properties in the path
       pathObjectArray.forEach((prop) => {
         // console.log("OJBECT_ARRAY PROP", prop)
+        // If the property is a method (get, post, put, patch, delete)
+        // Add a tag object to that method
         if (prop.match(/(get|post|put|patch|delete)/)) {
           switch (prop) {
             case "post":
