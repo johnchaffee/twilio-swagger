@@ -88,6 +88,7 @@ fs.readdir(sourceDir, (err, files) => {
     // Export the tagged spec to the appropriate directory
     fs.writeFile(
       `./api/${slug}/spec.json`,
+      // `../twilio-oai/spec/json/${spec}`,
       JSON.stringify(data, null, 2),
       (err) => {
         if (err) {
